@@ -5,13 +5,24 @@ body {
 }
 
 header, main, footer {
-    max-width: 960pt;
+    max-width: 760pt;
     margin:0 auto;
 }
 
 header, footer {   
     padding: 0.5rem;
     background-color: #C7D5BB;
+}
+
+header {
+    border-top-left-radius : 25px;
+    border-top-right-radius : 25px;
+}
+
+footer {
+    text-align: center;
+    border-bottom-left-radius : 25px;
+    border-bottom-right-radius : 25px;
 }
 
 main {
@@ -23,6 +34,7 @@ header img {
     float: right;
     width: 150px;
     height: auto;
+    box-shadow : -5px 5px 5px rgb(149, 155, 143, 0.4);
 }
 
 h1, h2 { 
@@ -30,7 +42,15 @@ h1, h2 {
     padding: 0.5rem;
 }
 
-h2 {
-    border-bottom: #959B8F solid 3px;
-    
+h1 {
+    font-size: 50px;
+}
+
+#container {
+    border-top:#959B8F solid 1px ;
+    padding: 0.5rem;
+}
+
+a, #lastmod {
+    color: #6C3E37;
 }
