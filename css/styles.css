@@ -1,0 +1,36 @@
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #959B8F;
+}
+
+header, main, footer {
+    max-width: 960pt;
+    margin:0 auto;
+}
+
+header, footer {   
+    padding: 0.5rem;
+    background-color: #C7D5BB;
+}
+
+main {
+    padding: 0.5rem;
+    background-color: #ffffff;
+}
+
+header img {
+    float: right;
+    width: 150px;
+    height: auto;
+}
+
+h1, h2 { 
+    font-family: 'Antonio', sans-serif;
+    padding: 0.5rem;
+}
+
+h2 {
+    border-bottom: #959B8F solid 3px;
+    
+}
