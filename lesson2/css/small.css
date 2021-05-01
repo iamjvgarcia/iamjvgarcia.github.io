@@ -39,11 +39,6 @@ main section {
     padding: 20px;
 }
 
-main section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
-}
-
 img {
     width: 100%;
 }
@@ -52,12 +47,17 @@ h1 {
     font-size: 50px;
     font-family: 'Antonio', sans-serif;
     padding: 0.5rem;
+    margin-bottom: -0.5rem;
 }
 
-h2 { 
+h2 {
     font-family: 'Antonio', sans-serif;
-    background-color: #78955F;
     padding: 0.5rem;
+    margin-top: -0.5rem ;
+}
+
+section h2 { 
+    background-color: #78955F;    
     margin: -20px;
     color: #F5F7F3;
 }
