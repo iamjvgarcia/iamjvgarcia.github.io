@@ -27,34 +27,46 @@ footer {
 
 main {
     padding: 0.5rem;
-    background-color: #ffffff;
+    background-color: #F5F7F3;
+    margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+main section {
+	margin: 0.5rem;
+    background-color: #E0E7DA ;
+    padding: 20px;
+}
+
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
 }
 
 img {
     width: 100%;
 }
 
-h1, h2 { 
+h1 {
+    font-size: 50px;
     font-family: 'Antonio', sans-serif;
     padding: 0.5rem;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-#container {
+h2 { 
+    font-family: 'Antonio', sans-serif;
+    background-color: #78955F;
     padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap: 25px;
+    margin: -20px;
+    color: #F5F7F3;
 }
 
-#column1, #column2, #column3 {
-    background-color: #EAEFE6 ;
-    padding: 20px;
+h3 {
+    margin-top: 30px;
 }
 
 a, #lastmod {
     color: #6C3E37;
+    font-weight: 900;
 }
