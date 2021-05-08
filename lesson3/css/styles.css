@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css2?family=Antonio&family=Open+Sans&display=swap);
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #959B8F;
+}
+
+header, main, footer, nav {
+    max-width: 760pt;
+    margin:0 auto;
+}
+
+header, footer {   
+    padding: 0.5rem;
+    background-color: #C7D5BB;
+}
+
+header {
+    border-top-left-radius : 25px;
+    border-top-right-radius : 25px;
+}
+
+nav {
+    background-color: #F5F7F3;
+    padding: 0.5rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul li {
+	display: block;
+    font-size: 20px;
+	text-align: center;
+    padding: 1rem;
+	text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #EBECE9;
+    padding: 1rem;
+    border-radius: 25%;
+}
+
+footer {
+    text-align: center;
+    border-bottom-left-radius : 25px;
+    border-bottom-right-radius : 25px;
+}
+
+main {
+    padding: 0.5rem;
+    background-color: #F5F7F3;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: 'Antonio', sans-serif;
+    padding: 0.5rem;
+    padding-left: .5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1, h2, h3 {
+    font-family: 'Antonio', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.typedescription {
+    border-top: 2px solid #3A4855;
+}
+
+.content {
+    padding: 1em;
+}
+
+#samplesiteheader {
+    font-size: 50px;
+    font-family: 'Antonio', sans-serif;
+}
+#samplenav {
+    background-color: #4E6172;
+    color: #F5F7F3;;
+}
+a, #lastmod {
+    color: #6C3E37;
+    font-weight: 900;
+}
+
+:root {
+	--primary-color: #000000;
+	--secondary-color:   #F5F7F3;
+	--accent1-color: 	#EBECE9;
+	--accent2-color: 	#4E6172;
+	--accent3-color: 	#3A4855;
+}
+.primary {
+	background-color: var(--primary-color);
+    color: #F5F7F3;
+  }
+.secondary {
+	background-color: var(--secondary-color);
+  }
+.accent1 {
+	background-color: var(--accent1-color);
+  }
+.accent2{
+	background-color: var(--accent2-color);
+  }
+.accent3{
+	background-color: var(--accent3-color);
+  }
+
+.colors tr td {
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+}

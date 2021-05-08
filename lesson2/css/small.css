@@ -34,9 +34,9 @@ main {
 }
 
 main section {
-	margin: 0.5rem;
+	margin: 1em;
     background-color: #E0E7DA ;
-    padding: 20px;
+    padding: 30px;
 }
 
 img {
@@ -47,6 +47,7 @@ h1 {
     font-size: 50px;
     font-family: 'Antonio', sans-serif;
     padding: 0.5rem;
+    padding-left: .5em;
     margin-bottom: -0.5rem;
 }
 
@@ -60,6 +61,10 @@ section h2 {
     background-color: #78955F;    
     margin: -20px;
     color: #F5F7F3;
+}
+
+header h2 {
+    padding-left: .5em;
 }
 
 h3 {
