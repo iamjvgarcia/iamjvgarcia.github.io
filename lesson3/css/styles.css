@@ -104,9 +104,7 @@ h3 {
     font-size: 50px;
     font-family: 'Antonio', sans-serif;
 }
-#samplenav {
-    background-color: #4E6172;
-    color: #F5F7F3;;
+
 }
 a, #lastmod {
     color: #6C3E37;
@@ -117,7 +115,7 @@ a, #lastmod {
 	--primary-color: #000000;
 	--secondary-color:   #F5F7F3;
 	--accent1-color: 	#EBECE9;
-	--accent2-color: 	#4E6172;
+	--accent2-color: 	#637C92;
 	--accent3-color: 	#3A4855;
 }
 .primary {
