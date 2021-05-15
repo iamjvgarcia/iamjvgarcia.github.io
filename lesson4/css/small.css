@@ -126,12 +126,6 @@ h3 {
     text-decoration: none;
 }
 
-.links:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-
 .bottom {
     text-align: center;
 }
