@@ -33,7 +33,7 @@
         padding: .6rem 1rem;
     }
 
-    main, nav, .headercontent, .bottom {
+    main,.headercontent, footer {
         max-width: 900px;
         margin:0 auto;
     }
