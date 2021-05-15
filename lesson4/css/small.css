@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'libra_serif_modernregular';
+    src: url('libraserifmodern-regular-webfont.woff2') format('woff2'),
+         url('libraserifmodern-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: #F5F7F3;
+}
+
+main {
+	margin: 0 auto;
+    background-color: #F5F7F3;
+    padding: 3em;
+}
+
+header {
+    display: flex;
+	align-items:center;
+	justify-content:center;
+    background-color: #293354;
+}
+
+.logo {
+	width: 100px;
+	height: auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+}
+
+.header h1 {
+	font-size: 50px;
+	margin: 0 0 0 17px;
+    font-family: 'libra_serif_modernregular', serif;
+    color: #F5F7F3 ;
+}
+
+.motto {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: #E45011;
+        margin-left: 20px;
+        font-size: .9rem;
+}
+
+nav ul {
+    background-color: #2A2A14;
+    font-family: 'Antonio', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    padding-left: 0;
+    display: block;
+    padding: 1.5rem 2%;
+    text-decoration: none;
+    border-top: 1px solid #eb6e38;
+    color: #E45011;
+}
+
+.hamburger li:first-child {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+.hamburger li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.ham {
+    border-top: none;
+}
+
+nav ul li.current {
+    background-color: #8c2a00; 
+}
+
+nav ul li.current a {
+    color: #E9D2C4;
+}
+
+nav ul li a:hover {
+    background-color: #bf3900;
+    color: #2A2A14;
+}
+
+h2 {
+    text-align: center;
+}
+
+.pagecontent {
+    padding: 20px;
+    border: 2px solid #2A2A14;
+    background-color: #b1db76;
+    margin: 5px;
+    display: block;
+}
+
+.pagecontent a {
+    text-decoration: none;
+    color: #2A2A14;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+footer, footer p {
+    background-color: #2A2A14;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    padding: .5em;
+    color: #E9D2C4;
+    text-align:center;
+    margin: 0;
+}
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
