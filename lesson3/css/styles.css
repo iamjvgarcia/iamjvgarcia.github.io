@@ -79,7 +79,7 @@ h1, h2, h3 {
     font-family: 'Antonio', sans-serif;
 }
 
-h2 {
+h1 {
     font-size: 30px;
 }
 
@@ -113,7 +113,7 @@ a, #lastmod {
 :root {
 	--primary-color: #000000;
 	--secondary-color:   #F5F7F3;
-	--accent1-color: 	#EBECE9;
+	--accent1-color: 	#E1E3DE;
 	--accent2-color: 	#637C92;
 	--accent3-color: 	#293354;
 }

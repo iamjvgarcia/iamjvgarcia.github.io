@@ -1,0 +1,44 @@
+@media only screen and (min-width: 35em) {
+    .headercontent {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+
+    .hctext  {
+        padding-top: 3em;
+    }
+
+    .headercontent h1 {
+        font-size: 2.5rem;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .7rem 1rem;
+    }
+
+    .links li:first-child {
+        display: none;
+    }
+    
+    .links {
+		display: flex;
+	}
+	.links li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+
+	.links a {
+		text-align: center;
+	}
+
+    .pagecontent {
+        margin: 5px;
+    }
+    
+    }

@@ -1,26 +1,13 @@
-@font-face {
-    font-family: 'libra_serif_modernregular';
-    src: url('libraserifmodern-regular-webfont.woff2') format('woff2'),
-         url('libraserifmodern-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F7F3	;
 }
 
-html {
-    background-color: #F5F7F3;
-}
-
-main {
-	margin: 0 auto;
-    background-color: #F5F7F3;
-    padding: 3em;
-}
-
-header {
-    display: flex;
-	align-items:center;
-	justify-content:center;
+header, footer {   
+    padding: 0.5rem;
     background-color: #293354;
+    color: #F5F7F3 ;
 }
 
 .logo {
@@ -28,111 +15,128 @@ header {
 	height: auto;
 }
 
-.header {
-	display: flex;
-	flex-direction: column;
+.logo img {
+    width: 100%;
 }
 
-.header h1 {
-	font-size: 50px;
+header {
+    display: flex;
+    justify-content: left;
+}
+
+.headercontent {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+  
+.hctext {
+    padding-top: 1.5em;
+}
+
+.headercontent h1 {
+	font-size: 1.6rem;
+    letter-spacing: 1pt;
 	margin: 0 0 0 17px;
-    font-family: 'libra_serif_modernregular', serif;
-    color: #F5F7F3 ;
+    font-family: 'Trirong', serif;
 }
 
-.motto {
+.headercontent p {
         font-style: italic;
-        letter-spacing: 1pt;
-        color: #E45011;
-        margin-left: 20px;
+        font-family: 'Trirong', serif;
+        margin: 0 0 0 17px;
         font-size: .9rem;
 }
 
 nav ul {
-    background-color: #2A2A14;
+    background-color: #F5F7F3;
     font-family: 'Antonio', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 nav ul li a {
-    padding-left: 0;
     display: block;
-    padding: 1.5rem 2%;
+    padding: .5rem;
     text-decoration: none;
-    border-top: 1px solid #eb6e38;
-    color: #E45011;
+    color: black;
 }
 
-.hamburger li:first-child {
+.links li:first-child {
     display: block;
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 20px;
 }
 
-.hamburger li {
+.links li {
     display: none;
+    margin: auto;
 }
 
 .responsive li {
     display: block;
 }
 
-.ham {
-    border-top: none;
+.menu {
+    border: none;
+    background-color: #F5F7F3;
 }
 
-nav ul li.current {
-    background-color: #8c2a00; 
+.menu:hover {
+    cursor: pointer;
 }
 
-nav ul li.current a {
-    color: #E9D2C4;
+.active {
+    background-color: #D7D9D3;
 }
 
 nav ul li a:hover {
-    background-color: #bf3900;
-    color: #2A2A14;
+    background-color: #E1E3DE;
+}
+
+h2, h3 {
+    font-family: 'Antonio', sans-serif;
 }
 
 h2 {
-    text-align: center;
+    font-size: 25px;
 }
 
-.pagecontent {
-    padding: 20px;
-    border: 2px solid #2A2A14;
-    background-color: #b1db76;
+h3 {
+    font-size: 20px;
+}
+
+.content {
+    padding: 1em;
     margin: 5px;
     display: block;
 }
 
-.pagecontent a {
+.content section {
+    padding: 1em;
+    margin: 5px;
+    background-color: #B6C3CE;
+    
+}
+
+.content h3 a {
     text-decoration: none;
-    color: #2A2A14;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 17px;
-    font-weight: bold;
 }
 
-footer, footer p {
-    background-color: #2A2A14;
-    font-family: 'Antonio', sans-serif;
-    font-size: 20px;
-    padding: .5em;
-    color: #E9D2C4;
-    text-align:center;
-    margin: 0;
-}
-
-.clearfix:after {
+.links:after {
     content:"";
     display: table;
     clear: both;
 }
 
+.bottom {
+    text-align: center;
+}
+
+.bottom a {
+    color: #F5F7F3;
+}
 
