@@ -97,7 +97,7 @@ nav ul li a:hover {
     background-color: #E1E3DE;
 }
 
-h2 {
+h1, h2, h3 {
     font-family: 'Antonio', sans-serif;
 }
 
@@ -105,13 +105,17 @@ h2 {
     font-size: 25px;
 }
 
-.content {
+h3 {
+    font-size: 20px;
+}
+
+main {
     padding: 1em;
-    margin: 5px;
+    margin: auto;
     display: block;
 }
 
-.content h2 a {
+main h2 a {
     text-decoration: none;
 }
 
@@ -121,17 +125,35 @@ h2 {
     clear: both;
 }
 
-
-.weathertoday {
-    position: absolute;
-    background-color: rgba(99, 124, 146, 0.30);
-    border-radius: 5px;
-    padding: 2rem 3rem;
-    width: 30rem;
-    top: 5rem;
-    left: 5rem;
+.pancakes {
+    text-align: center;
+}
+.hero {
+    position: relative;
+    margin: 10px auto;
+}
+  
+.pic{
+     max-width: 100%; 
+}
+  
+.weatherbox {
+      position:absolute;
+      top: 6rem;
+      left: 10px;
+      background: radial-gradient(#F5F7F3, #637C92);
+      padding: 0.4rem;
+      opacity: 0.8;
 }
 
+.hero p, h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.fdforecast, .article {
+    margin-top: 40px;
+}
 
 .forecast {
     width: 300px;

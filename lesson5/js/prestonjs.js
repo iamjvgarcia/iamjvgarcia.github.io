@@ -1,7 +1,9 @@
+//Toggle Menu
 function toggleMenu() {
     document.getElementsByClassName("links")[0].classList.toggle("responsive");
 }
 
+//Date
 let date = new Date();
 let year = date.getFullYear();
 let day = date.getDay();
@@ -14,8 +16,12 @@ let monthlist = ["January", "February", "March", "April" ,"May", "June", "July",
 let monthname = monthlist[month];
 document.querySelector("#currdate").textContent =  `${nameday}, ${daynumber} ${monthname} ${year}`;
 
-const banner = document.querySelector('.banner');
-const dayOfWeek = new Date().getDay();
-if (dayOfWeek === 5) {
-    banner.classList.add('visible');
+//pancakes
+const pancakes = document.querySelector(".pancakes");
+const dayOfWeek = date.getDay();
+if (dayOfWeek == 5) {
+  pancakes.style.display = "block";
+} else {
+  pancakes.style.display = "none";
 }
+

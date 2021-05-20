@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
 
         <div class="headercontent">
@@ -43,147 +44,113 @@
         </ul>
     </nav>
     <main>
-        <div class="content">
-            <h2>Preston Idaho</h2>
-            <div id="banner">
-                <img src="images/umbrellas1.jpg" alt="umbrellas">
-                <table class="weathertoday">
-                    <tbody>
-                        <tr class="table_1">
-                            <th class="table_1">
-                                <p>Currently:</p>
-                            </th>
-                            <td class="table_1">
-                                <p>Sunny</p>
-                            </td>
-                        </tr>
-                        <tr class="table_1">
-                            <th class="table_1">
-                                <p>High:</p>
-                            </th>
-                            <td class="table_1">
-                                <p>76°F</p>
-                            </td>
-                        </tr>
-                        <tr class="table_1">
-                            <th class="table_1">
-                                <p>Humidity: </p>
-                            </th>
-                            <td class="table_1">
-                                <p> 39%</p>
-                            </td>
-                        </tr>
-                        <tr class="table_1">
-                            <th class="table_1">
-                                <p>Wind Speed:</p>
-                            </th>
-                            <td class="table_1">
-                                <p>12 mph</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <h1>Preston Idaho</h1>
 
-            <div>
-                <h2>5 Day Forecast</h2>
+        <div class="hero">
+
+            <img class="pic" src="images/umbrellas.jpg" alt="umbrellas">
+
+            <section class="weatherbox">
+                <h3>Weather Summary</h3>
+
+                <p>Currently: <span id="currently">Sunny</span></p>
+                <p>High: <span id="high">76&deg;F</span></p>
+
+                <p>Wind Chill: <span id="wind">&deg;F</span></p>
+
+                <p>Humidity: <span id="humidity">69%</span></p>
+
+                <p>wind Speed: <span id="speed">5 mph</span></p>
+
+            </section>
+
+        </div>
+
+        <div class="fdforecast">
+            <h2> 5 Day Forecast</h2>
 
 
-                <table class="forecast">
-                    <tbody>
-                        <tr>
-                            <th class="day">
-                                <p class="day">Sun</p>
-                            </th>
-                            <th class="day">
-                                <p class="day">Mon</p>
-                            </th>
-                            <th class="day">
-                                <p class="day">Tue</p>
-                            </th>
-                            <th class="day">
-                                <p class="day">Wed</p>
-                            </th>
-                            <th class="day">
-                                <p class="day">Thurs</p>
-                            </th>
-                        </tr>
+            <table class="forecast">
+                <tbody>
+                    <tr>
+                        <th class="day">
+                            <p class="day">Sun</p>
+                        </th>
+                        <th class="day">
+                            <p class="day">Mon</p>
+                        </th>
+                        <th class="day">
+                            <p class="day">Tue</p>
+                        </th>
+                        <th class="day">
+                            <p class="day">Wed</p>
+                        </th>
+                        <th class="day">
+                            <p class="day">Thurs</p>
+                        </th>
+                    </tr>
 
-                        <tr class="weather">
-                            <th>
-                                <img src="images/cloudy.png" alt="partly cloudy" class="broadcast">
-                            </th>
-                            <th>
-                                <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
-                            </th>
-                            <th>
-                                <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
-                            </th>
-                            <th>
-                                <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
-                            </th>
-                            <th>
-                                <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
-                            </th>
+                    <tr class="weather">
+                        <th>
+                            <img src="images/cloudy.png" alt="partly cloudy" class="broadcast">
+                        </th>
+                        <th>
+                            <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
+                        </th>
+                        <th>
+                            <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
+                        </th>
+                        <th>
+                            <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
+                        </th>
+                        <th>
+                            <img src="images/partlycloudy.png" alt="partly cloudy" class="broadcast">
+                        </th>
 
-                        </tr>
+                    </tr>
 
-                        <tr class="temperature">
-                            <th>
-                                <p>54°</p>
-                            </th>
-                            <th>
-                                <p>61°</p>
-                            </th>
-                            <th>
-                                <p>67°</p>
-                            </th>
-                            <th>
-                                <p>65°</p>
-                            </th>
-                            <th>
-                                <p>72°</p>
-                            </th>
-                        </tr>
+                    <tr class="temperature">
+                        <th>
+                            <p>54°</p>
+                        </th>
+                        <th>
+                            <p>61°</p>
+                        </th>
+                        <th>
+                            <p>67°</p>
+                        </th>
+                        <th>
+                            <p>65°</p>
+                        </th>
+                        <th>
+                            <p>72°</p>
+                        </th>
+                    </tr>
 
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
+        </div>
 
-            <div>
-                <div class="article">
-                    <h2>Article</h2>
-                    <img src="images/kite.jpeg" alt="kiting">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Dictum sit amet justo donec. Varius sit amet mattis vulputate
-                        enim nulla aliquet. Mi proin sed libero enim sed faucibus turpis in eu. Feugiat vivamus at augue
-                        eget arcu. Amet dictum sit amet justo. At quis risus sed vulputate odio ut enim blandit. Aenean
-                        vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Aliquet enim tortor at
-                        auctor urna nunc id cursus metus. Sodales ut eu sem integer vitae justo eget magna. Risus
-                        pretium quam vulputate dignissim suspendisse in est ante. Faucibus scelerisque eleifend donec
-                        pretium. </p>
+        <div class="article">
+            <img src="images/hurricane.jpg" alt="hurricane">
+            <h2>Tracking two tropical disturbances in the Atlantic ahead of hurricane season's official start
+            </h2>
+            <p>By Jackson Dill and Haley Brink, CNN, May 21, 2021 </p>
+            
+            <p>(CNN)As if one area to watch wasn't enough, the National Hurricane Center (NHC) is now monitoring a
+                second region in the Atlantic Ocean basin for the potential formation of a tropical storm system. </p>
 
-                    <p> Hac habitasse platea dictumst quisque sagittis purus. Neque volutpat ac tincidunt vitae semper.
-                        Nunc vel risus commodo viverra maecenas accumsan lacus vel. In hac habitasse platea dictumst.
-                        Pulvinar neque laoreet suspendisse interdum consectetur. Lacus suspendisse faucibus interdum
-                        posuere lorem. Sit amet risus nullam eget. In egestas erat imperdiet sed euismod. Sit amet
-                        facilisis magna etiam tempor orci eu. Pharetra sit amet aliquam id diam maecenas ultricies mi
-                        eget. In dictum non consectetur a erat nam at. Risus feugiat in ante metus dictum at tempor
-                        commodo ullamcorper. Enim blandit volutpat maecenas volutpat blandit aliquam. Odio eu feugiat
-                        pretium nibh. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. </p>
+            <p> The center has already been watching an area over the North Atlantic, east of Bermuda. Meteorologists
+                have designated this area with the name Invest 90L, which indicates a particular area of disturbed
+                weather that is being monitored by the NHC. This storm system has a high chance of developing on Friday
+                or Saturday.</p>
 
-                    <p> Non curabitur gravida arcu ac. Tempor id eu nisl nunc mi ipsum faucibus. Vitae purus faucibus
-                        ornare suspendisse sed nisi. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque.
-                        Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Pellentesque diam volutpat commodo
-                        sed egestas. Dui sapien eget mi proin. Luctus accumsan tortor posuere ac ut consequat semper
-                        viverra nam. Euismod nisi porta lorem mollis. Non pulvinar neque laoreet suspendisse interdum
-                        consectetur libero. Risus pretium quam vulputate dignissim suspendisse. Molestie nunc non
-                        blandit massa enim. Vulputate odio ut enim blandit. Feugiat scelerisque varius morbi enim nunc
-                        faucibus.</p>
+            <p> On Thursday evening, the NHC added a different area in the Gulf of Mexico. This area of stormy weather
+                currently has a medium chance at becoming a tropical depression or a named, tropical storm before
+                tracking into the Deep South on Saturday. <a
+                    href="https://edition.cnn.com/2021/05/21/weather/tropical-development-gulf-atlantic-hurricane-season/index.html"><em>Read
+                        full article</em></a></p>
 
-                </div>
-
-            </div>
         </div>
     </main>
 
@@ -197,7 +164,8 @@
                 </div>
                 <div class="contactinfo">
                     <h2>Contact Information</h2>
-                    <p><img src="images/locationblack.png" alt="location"> 155 N 200 W, Preston, ID 83263, United States</p>
+                    <p><img src="images/locationblack.png" alt="location"> 155 N 200 W, Preston, ID 83263, United States
+                    </p>
                     <p><img src="images/text.png" alt="text"> TEXT: +1 208-852-1441 </p>
                     <p><img src="images/call.png" alt="call"> CALL: +1 208-852-1441 </p>
                     <p><img src="images/email.png" alt="email"> report@weatherwatch.co</p>
