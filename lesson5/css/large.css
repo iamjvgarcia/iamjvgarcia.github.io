@@ -1,0 +1,42 @@
+@media only screen and (min-width: 64em){
+    .headercontent {
+        display: grid;
+        grid-template-columns: 200px 700px;
+    }
+    
+    .hctext {
+        padding-top: 4em;
+    }
+    
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .headercontent h1 {
+        font-size: 3rem;
+    }
+
+    .headercontent p {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+
+    nav ul { 
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    main,.headercontent, footer {
+        max-width: 900px;
+        margin:0 auto;
+    }
+
+
+}
