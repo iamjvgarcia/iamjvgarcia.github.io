@@ -15,7 +15,7 @@ header, footer {
 	height: auto;
 }
 
-.logo img {
+    img {
     width: 100%;
 }
 
@@ -115,13 +115,6 @@ h3 {
     display: block;
 }
 
-.content section {
-    padding: 1em;
-    margin: 5px;
-    background-color: #B6C3CE;
-    
-}
-
 .content h3 a {
     text-decoration: none;
 }
@@ -138,5 +131,29 @@ h3 {
 
 .bottom a {
     color: #F5F7F3;
+}
+
+
+
+.table_forecast {
+    width: 300px;
+    margin: 0 auto;
+    border-spacing: 0;
+    border: 1px solid rgb(197, 197, 197);
+    margin-bottom: 20px;
+}
+
+.day {
+    text-align: center;
+    background: #9EB5DC;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.temperature {
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px;
 }
 

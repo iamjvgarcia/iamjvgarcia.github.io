@@ -33,7 +33,11 @@
         padding: .6rem 1rem;
     }
 
-    main,.headercontent, footer {
+    .table_forecast {
+        width: 858px;
+    }
+
+    main,.headercontent, footer, .banner {
         max-width: 900px;
         margin:0 auto;
     }

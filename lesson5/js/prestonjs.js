@@ -14,3 +14,8 @@ let monthlist = ["January", "February", "March", "April" ,"May", "June", "July",
 let monthname = monthlist[month];
 document.querySelector("#currdate").textContent =  `${nameday}, ${daynumber} ${monthname} ${year}`;
 
+const banner = document.querySelector('.banner');
+const dayOfWeek = new Date().getDay();
+if (dayOfWeek === 5) {
+    banner.classList.add('visible');
+}
