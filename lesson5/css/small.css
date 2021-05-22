@@ -97,16 +97,12 @@ nav ul li a:hover {
     background-color: #E1E3DE;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Antonio', sans-serif;
 }
 
 h2 {
     font-size: 25px;
-}
-
-h3 {
-    font-size: 20px;
 }
 
 main {
@@ -146,7 +142,7 @@ main h2 a {
       opacity: 0.8;
 }
 
-.hero p, h3 {
+.hero p, h2 {
     margin: 0;
     font-size: 16px;
 }
@@ -164,8 +160,7 @@ main h2 a {
 
 .day {
     text-align: center;
-    background: #637C92	;
-    color: white;
+    background: #B6C3CD;
     font-size: 1em;
     padding: 5px;
 }
