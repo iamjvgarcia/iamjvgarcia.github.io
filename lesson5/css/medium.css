@@ -41,7 +41,15 @@
         margin: 5px;
     }
 
-    .table_forecast {
+    .contact {
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+    .contactinfo {
+        margin-left: 40px;
+    }
+
+    .forecast {
         width: 628px;
         
     }

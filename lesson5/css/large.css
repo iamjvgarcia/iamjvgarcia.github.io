@@ -33,11 +33,20 @@
         padding: .6rem 1rem;
     }
 
-    .table_forecast {
+    .forecast {
         width: 858px;
     }
 
-    main,.headercontent, footer, .banner {
+   .contact {
+        display: grid;
+        grid-template-columns: 500px 400px;
+    }
+
+    .contactinfo {
+        margin-left: 40px;
+    }
+
+    main,.headercontent, .banner, .contact, .bottom {
         max-width: 900px;
         margin:0 auto;
     }
