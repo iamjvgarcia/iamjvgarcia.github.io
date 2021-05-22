@@ -37,7 +37,7 @@
         width: 858px;
     }
 
-   .contact {
+    .contact {
         display: grid;
         grid-template-columns: 500px 400px;
     }
