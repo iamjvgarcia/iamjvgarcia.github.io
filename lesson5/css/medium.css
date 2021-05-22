@@ -43,7 +43,7 @@
 
      .contact {
         display: grid;
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 400px auto;
     }
     .contactinfo {
         margin-left: 40px;
