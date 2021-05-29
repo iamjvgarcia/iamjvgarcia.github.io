@@ -1,7 +1,7 @@
 WebFont.load({
     google: {
         families: [
-            "Antonio", 
+            "Antonio:wght@500&display=swap", 
             "Open Sans", 
             "Trirong"
         ]
