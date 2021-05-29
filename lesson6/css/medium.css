@@ -42,8 +42,13 @@
     }
 
     .weatherbox {
+        position:absolute;
         top: 3rem;
-    }
+        left: 10px;
+        background: radial-gradient(#F5F7F3, #637C92);
+        padding: 0.4rem;
+        opacity: 0.8;
+  }
 
      .contact {
         display: grid;
