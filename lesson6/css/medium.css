@@ -41,6 +41,10 @@
         margin: 5px;
     }
 
+    .weatherbox {
+        top: 3rem;
+    }
+
      .contact {
         display: grid;
         grid-template-columns: 400px auto;

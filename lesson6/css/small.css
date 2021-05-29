@@ -136,7 +136,7 @@ main h2 a {
   
 .weatherbox {
       position:absolute;
-      top: 6rem;
+      top: 0rem;
       left: 10px;
       background: radial-gradient(#F5F7F3, #637C92);
       padding: 0.4rem;
