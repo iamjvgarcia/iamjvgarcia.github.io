@@ -136,11 +136,11 @@ main h2 a {
   
 .weatherbox {
       background: radial-gradient(#F5F7F3, #637C92);
-      padding: 0.4rem;
+      padding: 1rem;
       opacity: 0.8;
 }
 
-.weatherbox h2 {
+.weatherbox h3 {
     font-size: 16px;
 }
 
