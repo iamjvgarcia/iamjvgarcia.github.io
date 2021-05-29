@@ -45,24 +45,24 @@
         <h1>Preston Idaho</h1>
 
         <div class="hero">
-            <source media="(max-width: 500px)" srcset="/lesson6/images6/preston6-small.jpeg" >
-            <source media="(max-width: 800px)" srcset="/lesson6/images/preston6-medium.jpeg" >   
-            <source media="(max-width: 1400px)" srcset="/lesson6/images/wdd230_image_franklinOriginal.jpeg">
-            <img class="pic" src="images/small.jpg" alt="clear day">
-
+            <picture>
+                <source srcset="images/medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                <source srcset="images/large.jpeg" media="(min-width: 800px)">
+                <img src="images/small.jpg" alt="clear day">
+            </picture>
             <section class="weatherbox">
                 <h3>Weather Summary</h3>
 
                 <p>Currently: Sunny</p>
 
                 <p>Temperature: <span id="temp">45</span>&deg;F</p>
-    
+
                 <p>Wind Chill: <span id="wind"></span></p>
-                
+
                 <p>Humidity: 69%</p>
-                
+
                 <p>wind Speed: <span id="speed">5</span>mph</p>
-    
+
             </section>
 
         </div>
@@ -133,14 +133,16 @@
         </div>
 
         <div class="article">
-            <source media="(max-width: 525px)" srcset="/lesson6/images/shurricane.jpg">
-            <source media="(max-width: 800px)" srcset="/lesson6/images/mhurricane.jpg">
-            <source media="(max-width: 1400px)" srcset="/lesson6/images/hurricane.jpg">
-            <img src="images/hurricane.jpg" alt="hurricane">
+            <picture>
+                <source srcset="images/mhurricane.jpg" media="(min-width: 500px) and (max-width:799px)">
+                <source srcset="images/hurricane.jpg" media="(min-width: 800px)">
+                <img src="images/shurricane.jpg" alt="clear day">
+            </picture>
+
             <h2>Tracking two tropical disturbances in the Atlantic ahead of hurricane season's official start
             </h2>
             <p>By Jackson Dill and Haley Brink, CNN, May 21, 2021 </p>
-            
+
             <p>(CNN)As if one area to watch wasn't enough, the National Hurricane Center (NHC) is now monitoring a
                 second region in the Atlantic Ocean basin for the potential formation of a tropical storm system. </p>
 
@@ -198,6 +200,7 @@
     <script src="js/script.js"></script>
     <script src="js/webfont.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 
 </html>

@@ -1,2 +1,9 @@
-WebFont.load({google: {families: ["Antonio", "Open Sans", "Trirong"]
-    }});
+WebFont.load({
+    google: {
+        families: [
+            "Antonio", 
+            "Open Sans", 
+            "Trirong"
+        ]
+    } 
+});
