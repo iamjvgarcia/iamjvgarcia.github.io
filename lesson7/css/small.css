@@ -234,3 +234,30 @@ main h2 a {
     color: #F5F7F3;
 }
 
+img[data-src] {
+    filter: blur(0.5em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+}
+
+picture:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+picture {
+    width: 80%;
+    padding: 10px;
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
