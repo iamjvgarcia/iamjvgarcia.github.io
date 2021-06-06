@@ -8,7 +8,7 @@ if (typeof Storage !== "undefined") {
     } else {
       localStorage.visitcount = 1;
       document.getElementById("visit").innerHTML =
-        "This is your first time here! Welcome.";
+        " Welcome. This is your first time here!";
     }
 
 } 
