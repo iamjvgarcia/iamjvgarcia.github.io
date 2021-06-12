@@ -1,0 +1,306 @@
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F7F3	;
+}
+
+header {   
+    padding: 0.5rem;
+    background-color: #293354;
+    color: #F5F7F3 ;
+}
+
+.logo {
+	width: 100px;
+	height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+}
+
+.headercontent {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+  
+.hctext {
+    padding-top: 1.5em;
+}
+
+.headercontent h1 {
+	font-size: 1.6rem;
+    letter-spacing: 1pt;
+	margin: 0 0 0 17px;
+    font-family: 'Trirong', serif;
+}
+
+.headercontent p {
+        font-style: italic;
+        font-family: 'Trirong', serif;
+        margin: 0 0 0 17px;
+        font-size: .9rem;
+}
+
+nav ul {
+    background-color: #F5F7F3;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.links li:first-child {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.links li {
+    display: none;
+    margin: auto;
+}
+
+.responsive li {
+    display: block;
+}
+
+.menu {
+    border: none;
+    background-color: #F5F7F3;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #D7D9D3;
+}
+
+nav ul li a:hover {
+    background-color: #E1E3DE;
+}
+
+h1, h2 {
+    font-family: 'Antonio', sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+main {
+    padding: 1em;
+    margin: auto;
+    display: block;
+}
+
+main h2 a {
+    text-decoration: none;
+}
+
+.links:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.pancakes {
+    text-align: center;
+}
+.hero {
+    position: relative;
+    margin: 10px auto;
+}
+  
+.pic{
+     max-width: 100%; 
+}
+  
+.weatherbox {
+      background: radial-gradient(#F5F7F3, #637C92);
+      padding: 1rem;
+      opacity: 0.8;
+}
+
+.weatherbox h3 {
+    font-size: 16px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.fdforecast, .article {
+    margin-top: 40px;
+}
+
+.forecast {
+    width: 300px;
+    margin: 0 auto;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.day {
+    text-align: center;
+    background: #B6C3CD;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.temperature {
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: #E1E3DE;
+}
+
+.weather {
+    background-color: #F5F7F3;
+}
+
+.article img {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.tfooter {
+    background-color: #CED7DE;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    margin-top: 15px;
+    height:80%;
+    width:100%;
+    position:absolute;
+    box-shadow: 0 0 50px rgb(55, 56, 58);
+
+}
+
+.contact {
+    padding: 40px;
+    margin: 20px;
+}
+
+.contactinfo img {
+    width: 4.5%;
+}
+
+.social img {
+    width: 10%;
+}
+
+#bfooter {
+    background-color: #293354;
+}
+
+.bottom {
+    text-align: center;
+    color: #F5F7F3;
+    padding: 20px;
+}
+
+.bottom a {
+    color: #F5F7F3;
+}
+
+img[data-src] {
+    filter: blur(0.5em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+figure {
+    width: 80%;
+    padding: 10px;
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stormcenter fieldset {
+    margin: 50px 20px;
+    background-color: #bacbda;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+}
+
+.stormcenter legend {
+    background-color: #E1E3DE;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.stormcenter label { 
+    display: block;
+    padding: 5px;
+}
+
+.user input, .date input, .stormType input, .comments textarea, .location select, #rating{
+    padding: 5px;
+    display: block;
+    margin: 10px;
+    width: 90%;
+}
+
+.submitButton {
+    margin: 20px;
+    padding: 10px;
+    background-color:#293354;
+    color: #F5F7F3	;
+    font-size: 20px;
+    width: 25%;
+    border-radius: 15px;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+    background-color:#384163;
+}
+
+.thankyouMessage {
+    padding: 50px;
+    text-align: center;
+}

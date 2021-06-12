@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+img[data-src] {
+    filter: blur(0.5em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter .5s;
+}
+body {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+picture {
+    display: block;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
