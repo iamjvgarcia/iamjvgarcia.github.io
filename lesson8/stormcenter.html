@@ -70,10 +70,10 @@
                 </datalist>
 
                 <div class="rate">
-                    <label class="rating" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                    <label class="rating" for="rating">Rating: &nbsp;&nbsp;&nbsp;<span
+                        id="ratingvalue">5</span>
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="indicator"
-                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span
-                            id="ratingvalue">5</span>
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 
                     </label>
                 </div>
 
