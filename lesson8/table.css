@@ -20,41 +20,39 @@ table {
     width: 100%;
 }
 
- td,  th {
+td,  th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-.blue {
+tr:nth-child(odd) {
     background-color: #E7FFED;
 }
 
-.gray {
+tr:nth-child(even) {
     background-color: #E7F0ED;
 }
 
-.heading, .compiled {
+thead th, tfoot th {
     background-color: #7FB9C2;
 }
 
-.classification, #novp {
+tbody th, #novp {
     background-color: #628CA6;
-    color: #FEFFFF;
+    color: #FFFFFF;
 }
 
-#bf {
-    font-style: italic;
-}
-
-.heading {
+thead th {
     font-size: 30px;
+    font-weight: bold;
 }
 
-.classification {
+tbody th {
     font-size: 20px;
     font-weight: bold;
 }
 
-.compiled {
+tfoot th {
     font-size: 12px;
+    font-weight: normal;
 }
