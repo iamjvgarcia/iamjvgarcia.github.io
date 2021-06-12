@@ -1,0 +1,54 @@
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+ td,  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.blue {
+    background-color: #E7FFED;
+}
+
+.gray {
+    background-color: #E7F0ED;
+}
+
+.heading, .compiled {
+    background-color: #7FB9C2;
+}
+
+.classification, #novp {
+    background-color: #628CA6;
+    color: #FEFFFF;
+}
+
+#bf {
+    font-style: italic;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.classification {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.compiled {
+    font-size: 12px;
+}
