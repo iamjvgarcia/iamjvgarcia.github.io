@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
 /**Small**/
 
+body {
+    background-color: #6098BE;
+}
+
 header{
     font-family: 'Dancing Script', cursive;
     color: #F4F9E9;
@@ -14,14 +18,14 @@ h1{
 h1, footer{
     text-align: center;
 }
-/*-------body--------*/
+
 h2{
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
 
 main { 
-    background-color: #6098BE;
+    margin: 50px;
 }
 .cards{
    
