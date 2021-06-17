@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
+/**Small**/
+
+header{
+    font-family: 'Dancing Script', cursive;
+    color: #F4F9E9;
+    background-color: #1E3748;
+    margin: auto;
+    padding: 1rem;
+}
+h1{
+    font-size:3rem;
+}
+h1, footer{
+    text-align: center;
+}
+/*-------body--------*/
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+main { 
+    background-color: #6098BE;
+}
+.cards{
+   
+    align-content:center;
+    display: grid;
+   
+}
+section{
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: #F4F9E9;
+    box-shadow: 5px 10px 15px #0A171F;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    background-color: #1E3748;
+    color: #F4F9E9;
+    margin: auto;
+    padding: 1rem;
+}
+
+/**Medium**/
+@media only screen and (min-width: 35em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 30px;
+
+    }
+}
+
+/**Large**/
+@media only screen and (min-width: 64em){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 30px;
+    }
+}
