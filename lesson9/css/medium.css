@@ -1,0 +1,104 @@
+@media only screen and (min-width: 35em) {
+    .headercontent {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+
+    .hctext  {
+        padding-top: 3em;
+    }
+
+    .headercontent h1 {
+        font-size: 2.5rem;
+    }
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .7rem 1rem;
+    }
+
+    .links li:first-child {
+        display: none;
+    }
+    
+    .links {
+		display: flex;
+	}
+	.links li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+
+	.links a {
+		text-align: center;
+	}
+
+    .pagecontent {
+        margin: 5px;
+    }
+
+    .weatherbox {
+        position:absolute;
+        top: 3rem;
+        left: 10px;
+        background: radial-gradient(#F5F7F3, #637C92);
+        padding: 2rem;
+        opacity: 0.8;
+    }
+
+     .contact {
+        display: grid;
+        grid-template-columns: 400px auto;
+    }
+    .contactinfo {
+        margin-left: 40px;
+    }
+
+    .forecast {
+        width: 628px;
+        
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 40px 10px 40px;
+    }
+  
+    .towns {
+        padding: 10px;
+    }
+
+    #townCards {
+        display: block;
+    }
+
+    #townCards section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    #townCards section:nth-child(odd) img {
+        grid-column: 2;
+        grid-row: 2/6;
+    }
+    
+    #townCards section:nth-child(odd) h2, #townCards section:nth-child(odd) h4, #townCards section:nth-child(odd) p {
+        grid-column: 1;
+    } 
+
+    #townCards section:nth-child(even) img {
+        grid-column: 1;
+        grid-row: 2/6;
+    }
+    
+    #townCards section:nth-child(even) h2, #townCards section:nth-child(even) h4, #townCards section:nth-child(even) p {
+        grid-column: 2;
+    } 
+}

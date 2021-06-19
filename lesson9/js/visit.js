@@ -15,4 +15,3 @@ if (typeof Storage !== "undefined") {
   
   console.log("localstorage visit count now: " + localStorage.visitcount);
   
-
