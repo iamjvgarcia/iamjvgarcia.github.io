@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson6 Preston Page Continuation Assignment created by Jill Anne Ruth V. Garcia">
+    <title>Preston Page | Weather Watch</title>
+    <link rel="shortcut icon" href="images/favicon.ico" sizes="70x70" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+
+        <div class="headercontent">
+            <div class="logo">
+                <img src="images/logowhite.png" alt="Weather Watch logo">
+            </div>
+            <div class="hctext">
+                <h1>Weather Watch</h1>
+                <p>Be up to date on the latest weather update</p>
+            </div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="links">
+            <li><button class="menu" onclick="toggleMenu()">&#9776; Menu</button></li>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li class="active"><a href="/lesson10/preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/umbrellas1.jpg" media="(min-width: 500px) and (max-width:799px)">
+                <source srcset="images/umbrellas1.jpg" media="(min-width: 800px)">
+                <img src="images/umbrellas1.jpg" alt="clear day">
+            </picture>
+            <section class="weatherbox">
+                <h2>Weather Summary</h2>
+
+                <p>Currently: <span id="currentweathercondition"></span></p>
+
+                <p>Temperature: <span id="temp"></span></p>
+
+                <p>Wind Chill: <span id="wind"></span></p>
+
+                <p>Humidity: <span id="humidity"></span></p>
+
+                <p>Wind Speed: <span id="speed"></span></p>
+
+            </section>
+
+        </div>
+
+        <section class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table class="list"></table>
+        </section>
+
+        <div class="article">
+            <h2>Lorem Ipsum</h2>
+            <picture>
+                <img src="images/hurricane.jpg" alt="clear day">
+            </picture>
+            <p>By Jane Doe, XXX XX, 2021 </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Eu lobortis elementum nibh tellus molestie. Tempus quam pellentesque nec nam aliquam
+            sem. At tellus at urna condimentum mattis pellentesque. Ante in nibh mauris cursus. Ipsum suspendisse
+            ultrices gravida dictum. Et netus et malesuada fames. Viverra vitae congue eu consequat ac. Massa placerat
+            duis ultricies lacus sed turpis tincidunt. Eget gravida cum sociis natoque penatibus et magnis dis.
+            Pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+
+            <p>Maecenas pharetra convallis posuere morbi leo urna molestie at. Netus et malesuada fames ac turpis egestas
+            maecenas pharetra convallis. Cras ornare arcu dui vivamus arcu felis. Quisque sagittis purus sit amet
+            volutpat consequat. Aliquet enim tortor at auctor urna nunc. Elit sed vulputate mi sit amet mauris commodo.
+            Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Dictum at tempor commodo ullamcorper a
+            lacus vestibulum sed arcu. Nibh mauris cursus mattis molestie. Nunc sed augue lacus viverra vitae.
+            Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Mattis nunc sed blandit libero. Mollis
+            aliquam ut porttitor leo a. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue ut.</p>
+
+            <p>Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Commodo ullamcorper a lacus
+            vestibulum sed arcu. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Ipsum dolor
+            sit amet consectetur adipiscing elit. Volutpat ac tincidunt vitae semper quis lectus nulla. Urna duis
+            convallis convallis tellus id interdum velit laoreet. Malesuada fames ac turpis egestas maecenas pharetra.
+            Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eget sit amet tellus cras adipiscing
+            enim eu. Elit eget gravida cum sociis natoque penatibus et magnis dis. Condimentum vitae sapien pellentesque
+            habitant morbi tristique senectus. Ac orci phasellus egestas tellus rutrum tellus pellentesque.</p>
+            <p> <a href="#"><em>Read the full article</em></a></p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="tfooter">
+            <div class="contact">
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.57172441029!2d-111.95053787325963!3d42.099725549615314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621628405348!5m2!1sen!2sus"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contactinfo">
+                    <h2>Contact Information</h2>
+                    <p><img src="images/locationblack.png" alt="location"> 155 N 200 W, Preston, ID 83263, United States
+                    </p>
+                    <p><img src="images/text.png" alt="message"> TEXT: +1 208-852-1441 </p>
+                    <p><img src="images/call.png" alt="phone"> CALL: +1 208-852-1441 </p>
+                    <p><img src="images/email.png" alt="email"> report@weatherwatch.co</p>
+
+                    <div class="social">
+                        <a href="https://twitter.com/"><img src="images/twblack.png" alt="twitter"></a>
+                        <a href="https://www.facebook.com/"><img src="images/fbblack.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/"><img src="images/igblack.png" alt="instagram"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bfooter">
+            <div class="bottom">
+                <p> &copy;<span id="currentyear"> </span>
+                    | Jill Anne Ruth V. Garcia | Philippines |
+                    <a href="https://www.byui.edu/online">
+                        Brigham Young University Online
+                    </a>
+                </p>
+                <p> Current Date: <span id="currdate"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+</body>
+
+</html>
