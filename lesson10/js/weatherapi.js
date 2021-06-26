@@ -1,5 +1,5 @@
-const apiURL1 = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
-fetch(apiURL1)
+const wboxURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
+fetch(wboxURL)
   .then((response) => response.json())
   .then((jsonObject) => {
     console.log(jsonObject);
@@ -9,35 +9,32 @@ fetch(apiURL1)
     document.getElementById('speed').textContent = jsonObject.wind.speed.toFixed(0) + 'mph';
   });
 
-  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
+  const fdfURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
 
-  fetch(apiURL2)
+  fetch(fdfURL)
   .then((response) => response.json())
-  .then((jsonObject) => {
-    console.log(jsonObject);
-    const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  .then((jsObject) => {
+    console.log(jsObject);
+    let day = 0;
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-    const list = jsonObject.list.filter(list => list.dt_txt.includes("18:00:00"));
-    console.log(list);
+    const forecast = jsObject.list.filter( forecast => forecast.dt_txt.includes("18:00:00"));
+    console.log(forecast);
+    forecast.forEach( d => {
+        let date = new Date(d.dt_txt);
+        document.getElementById(`day${day+1}`).textContent = days[date.getDay()];
+        document.getElementById(`temp${day+1}`).textContent = `${d.main.temp.toFixed(0)}°F`;
+       
 
-    list.forEach(list => {
-      let tr = document.createElement('tr');
-      let d = new Date(list.dt_txt);
-      let th = document.createElement('th');
-      let img = document.createElement('img');
-      let td = document.createElement('td');
+        let imagesrc = 'https://openweathermap.org/img/w/' + d.weather[0].icon + '.png'; 
+        let desc = d.weather[0].description;
+        
+        document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+        document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
 
-      th.textContent = dayofWeek[d.getDay()];
-      tr.appendChild(th);
-
-      img.setAttribute('src', "https://openweathermap.org/img/wn/" + list.weather[0].icon + ".png");
-      tr.appendChild(img);
-
-      td.textContent = list.main.temp.toFixed(0) + ' °F';
-      tr.appendChild(td);
-
-      document.querySelector('table.list').appendChild(tr);
-  });
+        day++
+    })
+    
 
 });
   

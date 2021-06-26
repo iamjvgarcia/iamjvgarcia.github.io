@@ -48,6 +48,31 @@
         background: radial-gradient(rgba(245, 247, 243, 0.8), rgba(99, 124, 146, .8));
         padding: 2rem;
     }
+    
+    .fdforecast, .article {
+        padding: 30px;
+    }
+
+    .fdforecast {
+        padding-bottom: 60px;
+    }
+
+    .fdforecast h2, .article h2 {
+        padding: 0px;
+    }
+
+    .forecast img {
+        width: 100px;
+    }
+
+     .day th {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .temperature td {
+        padding: 20px;
+    }
 
     .article img {
         float: right;

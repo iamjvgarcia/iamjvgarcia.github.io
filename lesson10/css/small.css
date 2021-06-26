@@ -153,25 +153,41 @@ main h2 a {
     margin-top: 40px;
 }
 
+.fdforecast h2, .article h2 {
+    padding: 1rem;
+}
+
+.fdforecast {
+    background: #E1E3DE;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+}
+
 .forecast {
     margin: 0 auto;
     border-spacing: 0;
-    margin-bottom: 20px;
-    background: #E1E3DE;
-    padding: 20px 0px;
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.3);
+
 }
 
-
-.forecast th {
+.day th {
     text-align: center;
     font-size: 1em;
     padding: 10px;
+    background-color: #343f63;
+    color: #F5F7F3;
+    margin: 10px;
 }
 
-.forecast td {
-    font-weight: 300;
+.weather td {
+    background-color: #F5F7F3;
+}
+
+.temperature td {
     text-align: center;
-    padding-bottom: 10px;
+    font-size: 1em;
+    padding: 10px;
+    background-color: #c8d3dc;
 }
 
 .article img {
