@@ -26,9 +26,9 @@ fetch(wboxURL)
         document.getElementById(`temp${day+1}`).textContent = `${d.main.temp.toFixed(0)}°F`;
        
 
-        let imagesrc = 'https://openweathermap.org/img/w/' + d.weather[0].icon + '.png'; 
+        let imagesrc = 'https://openweathermap.org/img/wn/' + d.weather[0].icon + '.png'; 
         let desc = d.weather[0].description;
-        
+
         document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
         document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
 
