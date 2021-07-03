@@ -73,11 +73,7 @@
     .temperature td {
         padding: 20px;
     }
-    
-    .events {
-        padding: 60px;
-    }
-    
+
     .article img {
         float: right;
         padding: 20px;
@@ -88,6 +84,7 @@
      .contact {
         display: grid;
         grid-template-columns: 400px auto;
+        grid-gap: 20px;
     }
     .contactinfo {
         margin-left: 40px;
@@ -131,4 +128,9 @@
     #townCards section:nth-child(even) h2, #townCards section:nth-child(even) h4, #townCards section:nth-child(even) p {
         grid-column: 2;
     } 
+
+    .stormcenter fieldset {
+        margin: 40px 20px;
+    }
+
 }

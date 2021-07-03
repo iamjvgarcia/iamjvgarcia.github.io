@@ -44,7 +44,7 @@
         <h1 class="storm">Report a Weather Activity</h1>
         <form method="get" action="thanks.html" class="stormcenter">
             <fieldset>
-                <legend>Tell Us About Yourself</legend>
+                <legend>About Yourself</legend>
                 <label class="user">Full Name:* <input type="text" name="fname" pattern="^[a-zA-Z0-9]*$" minlength="5"
                         required></label>
                 <label class="user">Email: <input type="email" name="email" placeholder="john.smith@gmail.com"></label>
@@ -54,7 +54,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Tell Us About the Weather</legend>
+                <legend>About the Weather</legend>
                 <label class="date">Storm Date:<input type="date" name="stormDate"> </label>
 
                 <label class="stormType" for="stormlist">Storm Type:<input list="stormType" id="stormlist"
@@ -91,19 +91,19 @@
                     <option value="10">
                 </datalist>
 
-                <label class="location">Tell Us Your Location
-                    <select name="regions">
-                        <option value=" ">Please Select</option>
-                        <option value="preston">Preston </option>
-                        <option value="sodaSprings">Soda Springs </option>
-                        <option value="fishHaven">Fish Haven </option>
+                <label class="location">Your Location
+                    <select name="regions" id="regions">
+                        <option value=" " class="locale">Please Select</option>
+                        <option value="preston" class="locale">Preston </option>
+                        <option value="sodaSprings" class="locale">Soda Springs </option>
+                        <option value="fishHaven" class="locale">Fish Haven </option>
                     </select>
                 </label>
 
                 <label class="danger">Are you in danger?</label>
-                <label class="yesnom"><input type="radio" name="indanger" value="yes"> Yes </label>
-                <label class="yesnom"><input type="radio" name="indanger" value="maybe"> Maybe</label>
-                <label class="yesnom"><input type="radio" name="indanger" value="no"> No </label>
+                <label class="yesnom"><input type="radio" name="indanger" value="yes"> Yes </label><span class="indicator"></span>
+                <label class="yesnom"><input type="radio" name="indanger" value="maybe"> Maybe</label><span class="indicator"></span>
+                <label class="yesnom"><input type="radio" name="indanger" value="no"> No </label><span class="indicator"></span>
 
             </fieldset>
 
@@ -123,11 +123,6 @@
     <footer>
         <div class="tfooter">
             <div class="contact">
-                <div class="map-responsive">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.57172441029!2d-111.95053787325963!3d42.099725549615314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621628405348!5m2!1sen!2sus"
-                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
                 <div class="contactinfo">
                     <h2>Contact Information</h2>
                     <p><img src="images/locationblack.png" alt="location"> 155 N 200 W, Preston, ID 83263, United States
@@ -135,13 +130,13 @@
                     <p><img src="images/text.png" alt="message"> TEXT: +1 208-852-1441 </p>
                     <p><img src="images/call.png" alt="phone"> CALL: +1 208-852-1441 </p>
                     <p><img src="images/email.png" alt="email"> report@weatherwatch.co</p>
-
-                    <div class="social">
-                        <a href="https://twitter.com/"><img src="images/twblack.png" alt="twitter"></a>
-                        <a href="https://www.facebook.com/"><img src="images/fbblack.png" alt="facebook"></a>
-                        <a href="https://www.instagram.com/"><img src="images/igblack.png" alt="instagram"></a>
-
-                    </div>
+                </div>
+                <div class="social">
+                    <h2>Follow</h2>
+                    <a href="https://twitter.com/"><img src="images/twblack.png" alt="twitter"></a>
+                    <a href="https://www.facebook.com/"><img src="images/fbblack.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/igblack.png" alt="instagram"></a>
+                </div>
                 </div>
             </div>
         </div>

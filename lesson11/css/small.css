@@ -234,11 +234,17 @@ main h2 a {
 }
 
 .contactinfo img {
-    width: 4.5%;
+    width: 10%;
 }
 
 .social img {
-    width: 10%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
 }
 
 #bfooter {
@@ -314,20 +320,23 @@ figure {
 /* Gallery and Home Page Towns End*/
 
 /* Storm Center*/
+form {
+	margin: 0px 0px 20px 0px;
+}
+
 .stormcenter fieldset {
-    margin: 50px 20px;
-    background-color: #E1E3DE;
+    margin-bottom: 20px;
+    background-color: #CED7DE;
     border-radius: 15px;
     border: none;
     padding: 20px;
 }
 
 .stormcenter legend {
-    background-color: #CED7DE;
+    background-color: #E1E3DE;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 0 0 10px #333;
 }
 
 .stormcenter label { 
@@ -335,11 +344,49 @@ figure {
     padding: 5px;
 }
 
-.user input, .date input, .stormType input, .comments textarea, .location select, #rating{
+.user input, .date input, .stormType input, .comments textarea, .location select {
     padding: 5px;
     display: block;
     margin: 10px;
     width: 90%;
+}
+
+.user input:focus, .date input:focus, .stormType input:focus, .comments textarea:focus, .location select:focus {
+    outline: none;
+}
+
+.rating {
+    width: 90%;
+    display: block;
+}
+  
+   #rating {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 10px;
+  }
+
+   #rating::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #293354;
+    cursor: pointer;
+    padding: 20px;
+  }
+  
+   #rating::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #293354;
+    cursor: pointer;
+    padding: 20px;
 }
 
 #ratingvalue {
@@ -347,13 +394,14 @@ figure {
     font-size: 20px;
 }
 
+
 .submitButton {
     margin: 20px;
     padding: 10px;
     background-color:#293354;
     color: #F5F7F3	;
     font-size: 20px;
-    width: 25%;
+    width: 35%;
     border-radius: 15px;
 }
 

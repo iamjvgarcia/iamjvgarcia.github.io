@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em){
     .headercontent {
         display: grid;
-        grid-template-columns: 200px 700px;
+        grid-template-columns: 250px 750px;
     }
     
     .hctext {
@@ -42,7 +42,20 @@
 
     .contact {
         display: grid;
-        grid-template-columns: 500px 400px;
+        grid-template-columns: 500px, 500px;
+    }
+
+    .social {
+        grid-column: 2;
+    }
+
+    .contact img {
+        width: 5%;
+    }
+
+    .social img {
+        width: 10%;
+        border-radius: 50%;
     }
 
     .contactinfo {
@@ -50,7 +63,7 @@
     }
 
     main,.headercontent, .banner, .contact, .bottom {
-        max-width: 900px;
+        max-width: 1000px;
         margin:0 auto;
     }
 
