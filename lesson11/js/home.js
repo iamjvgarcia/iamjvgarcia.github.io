@@ -12,18 +12,27 @@ fetch(requestURL)
 
             let townCards = document.createElement('section');
             let h2 = document.createElement('h2');
-            let h4 = document.createElement('h4');
+            let motto = document.createElement('p');
+            motto.setAttribute("class","motto")
+            let imgContainter = document.createElement('div');
+            imgContainter.setAttribute("class","imgContainer")
+            let townImage = document.createElement('img');
             let year = document.createElement('p');
             let population = document.createElement('p');
             let rainfall = document.createElement('p');
-            let townImage = document.createElement('img');
+
+            townCards.appendChild(imgContainter)
+
+            townImage.setAttribute('src', towns.photo);
+            townImage.setAttribute('alt', `${towns.name}`);
+            imgContainter.appendChild(townImage);
 
             h2.textContent = `${towns.name}`;
             townCards.appendChild(h2);
 
-            h4.textContent = `${towns.motto}`;
-            townCards.appendChild(h4);
-
+            motto.textContent = `${towns.motto}`;
+            townCards.appendChild(motto);
+                        
             year.textContent = `Year Founded: ${towns.yearFounded}`;
             townCards.appendChild(year);
 
@@ -32,10 +41,6 @@ fetch(requestURL)
 
             rainfall.textContent = `Average Rainfall: ${towns.averageRainfall}`;
             townCards.appendChild(rainfall);
-
-            townImage.setAttribute('src', towns.photo);
-            townImage.setAttribute('alt', `${towns.name}`);
-            townCards.appendChild(townImage);
 
             document.getElementById('townCards').appendChild(townCards);
           

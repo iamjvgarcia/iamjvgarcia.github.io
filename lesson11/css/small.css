@@ -287,12 +287,20 @@ figure {
 
 .towns {
     background-color: #E1E3DE;
-    padding: 20px;
+    padding: 40px;
 }    
 
 #townCards section:hover {
     box-shadow: 0 0 30px #333;
 
+}
+
+.imgContainer {
+    padding: 10px;
+}
+
+.motto {
+    font-weight: bold;
 }
 
 #townCards section {
