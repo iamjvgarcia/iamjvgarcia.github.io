@@ -166,6 +166,7 @@ main h2 a {
     margin: 0 auto;
     border-spacing: 0;
     box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.6);
+    width: 100%;
 
 }
 
@@ -191,12 +192,14 @@ main h2 a {
     padding: 20px;
     background: #E1E3DE;
     text-align: center;
+    margin: 30px;
 }
 
 .text {
     padding: 40px;    
     box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.6);
     background-color: #F5F7F3;
+    border: 5px double #293354;
 }
 
 .article img {

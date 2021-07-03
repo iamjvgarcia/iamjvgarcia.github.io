@@ -62,7 +62,9 @@
     }
 
     .forecast img {
-        width: 100px;
+        width: 65%;
+        padding: 20px;
+        margin:20px;
     }
 
      .day th {
