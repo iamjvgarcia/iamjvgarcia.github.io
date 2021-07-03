@@ -301,17 +301,18 @@ figure {
 /* Storm Center*/
 .stormcenter fieldset {
     margin: 50px 20px;
-    background-color: #bacbda;
+    background-color: #E1E3DE;
     border-radius: 15px;
     border: none;
     padding: 20px;
 }
 
 .stormcenter legend {
-    background-color: #E1E3DE;
+    background-color: #CED7DE;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 20px;
+    box-shadow: 0 0 10px #333;
 }
 
 .stormcenter label { 
