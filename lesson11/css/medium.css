@@ -73,7 +73,11 @@
     .temperature td {
         padding: 20px;
     }
-
+    
+    .events {
+        padding: 60px;
+    }
+    
     .article img {
         float: right;
         padding: 20px;

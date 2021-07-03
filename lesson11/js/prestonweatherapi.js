@@ -1,3 +1,4 @@
+//Weather Condition
 const wboxURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
 fetch(wboxURL)
   .then((response) => response.json())
@@ -9,6 +10,21 @@ fetch(wboxURL)
     document.getElementById('speed').textContent = jsonObject.wind.speed.toFixed(0) + 'mph';
   });
 
+ //Wind Chill
+ let Temp = document.getElementById('temp').textContent;
+ let speedW = document.getElementById('speed').textContent;
+ 
+ if(Temp <= 50 && speedW >= 3){
+   let p = Math.pow(speedW, 0.16);
+   let f = 35.74 + 0.6215 * Temp - 35.75 * p + 0.4275 * Temp * p;
+   let result = f.toFixed(0);
+   document.getElementById('wind').innerHTML = result + "&deg;F";
+ }
+ else{
+    document.getElementById('wind').textContent = "N/A";
+ }
+
+  //Five Day Forecast
   const fdfURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=22a251b90baf680bdd0ab38772b58b4d&units=imperial";
 
   fetch(fdfURL)
@@ -37,4 +53,40 @@ fetch(wboxURL)
     
 
 });
-  
+
+//Events
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.table(jsonObject);
+    const towns = jsonObject["towns"];
+    const town = towns[6];
+    const events = town.events;
+    //console.log(events);
+
+    let container = document.createElement("div");
+    container.setAttribute("class", "container");
+    let card1 = document.createElement("section");
+    card1.setAttribute("class", "text");
+    let h2 = document.createElement("h2");
+    h2.textContent = "Upcoming Events:";
+    card1.appendChild(h2);
+
+    for (let i = 0; i < events.length; i++) {
+      let p1 = document.createElement("p");
+
+      document.querySelector("div.events").appendChild(container);
+
+      p1.textContent = town.events[i];
+      card1.appendChild(p1);
+
+      document.querySelector("div.events").appendChild(card1);
+
+      container.appendChild(card1);
+    }
+  });
+

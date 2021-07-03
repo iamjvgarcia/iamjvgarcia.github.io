@@ -122,7 +122,7 @@ main h2 a {
     clear: both;
 }
 
-/* Preston Page */
+/* Preston/Fish Haven/Soda Sprins Pages */
 .pancakes {
     text-align: center;
 }
@@ -158,41 +158,49 @@ main h2 a {
 }
 
 .fdforecast {
-    background: #E1E3DE;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-bottom: 60px;
 }
 
 .forecast {
     margin: 0 auto;
     border-spacing: 0;
-    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.3);
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.6);
 
 }
 
-.day th {
+.day th, .temperature td  {
     text-align: center;
     font-size: 1em;
     padding: 10px;
-    background-color: #343f63;
+    background: #343f63;
     color: #F5F7F3;
     margin: 10px;
 }
 
 .weather td {
-    background-color: #F5F7F3;
+    background: #c8d3dc;
 }
 
 .temperature td {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.events {
+    padding: 20px;
+    background: #E1E3DE;
     text-align: center;
-    font-size: 1em;
-    padding: 10px;
-    background-color: #c8d3dc;
+}
+
+.text {
+    padding: 40px;    
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.6);
+    background-color: #F5F7F3;
 }
 
 .article img {
     display: block;
-    padding: 20px;
     margin: 10px;
     width: 75%;
 }
@@ -223,7 +231,6 @@ main h2 a {
 
 .contact {
     padding: 40px;
-    margin: 20px;
 }
 
 .contactinfo img {
