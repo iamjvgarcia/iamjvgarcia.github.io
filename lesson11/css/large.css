@@ -1,0 +1,88 @@
+@media only screen and (min-width: 64em){
+    .headercontent {
+        display: grid;
+        grid-template-columns: 200px 700px;
+    }
+    
+    .hctext {
+        padding-top: 4em;
+    }
+    
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .headercontent h1 {
+        font-size: 3rem;
+    }
+
+    .headercontent p {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+
+    nav ul { 
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 0;
+    }
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    .article img {
+        float: right;
+        padding: 20px;
+        margin: 10px;
+        width: 50%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 500px 400px;
+    }
+
+    .contactinfo {
+        margin-left: 40px;
+    }
+
+    main,.headercontent, .banner, .contact, .bottom {
+        max-width: 900px;
+        margin:0 auto;
+    }
+
+    
+    figure:hover {
+    box-shadow: 0 0 50px #333;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 40px 10px 40px;
+    }
+
+    .towns {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+
+    #townCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #townCards section {
+        display: block;
+        margin: 20px auto 20px auto;
+        padding: 10px;
+        width: 90%;
+        line-height: 1.5rem;
+    }
+
+}
