@@ -299,6 +299,10 @@ figure {
     padding: 40px;
 }    
 
+#townsheader {
+ padding: 20px;
+}
+
 #townCards section:hover {
     box-shadow: 0 0 30px #333;
 
