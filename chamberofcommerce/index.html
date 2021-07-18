@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Imus City Chamber of Commerce website as the final project for WDD230. Site by Jill Anne Ruth V. Garcia">
+    <title>Home | Imus City Chamber of Commerce</title>
+    <link rel="shortcut icon" href="images/favicon.ico" sizes="70x70" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/rsz_iccc_banner.png" alt="ICCC Logo"></a>
+        </div>
+        <nav>
+            <ul class="links">
+                <li><button class="menu" onclick="toggleMenu()">&#9776; Menu</button></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="imus.html">Imus</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="bannercarousel">
+            <img src="images/1.jpg" alt="Imus City" class="slides">
+            <img src="images/2.jpg" alt="Imus City" class="slides">
+            <img src="images/3.jpg" alt="Imus City" class="slides">
+            <img src="images/4.jpg" alt="Imus City" class="slides">
+            <img src="images/6.jpg" alt="Imus City" class="slides">
+        </div>
+
+        <div class="about">
+            <h1> About the Imus City Chamber of Commerce</h1>
+            <p> The Imus City Chamber of Commerce (ICCC) is a non-stock, non-profit, non-government
+                business organization comprised of small, medium, and large enterprises, local chambers and industry
+                associations representing various sectors of business, all working together to foster a healthier
+                economy and improve the viability of business in the community.
+            </p>
+        </div>
+        <div class="weather">
+            <div class="weatherbox">
+                <h1>Weather Summary</h1>
+
+                <p>Currently: <span id="currentweathercondition"></span></p>
+
+                <p>Temperature: <span id="temp"></span></p>
+
+                <p>Humidity: <span id="humidity"></span></p>
+
+            </div>
+
+            <div class="rdforecast">
+                <h1> 3 Day Forecast</h1>
+                <table class="forecast">
+                    <tbody>
+                        <tr class="day">
+                            <th id="day1"></th>
+                            <th id="day2"></th>
+                            <th id="day3"></th>
+                        </tr>
+
+                        <tr class="weather">
+                            <td id="imagesrc1">
+                                <img id="icon1" src="" alt="">
+                            </td>
+                            <td id="imagesrc2">
+                                <img id="icon2" src="" alt="">
+                            </td>
+                            <td id="imagesrc3">
+                                <img id="icon3" src="" alt="">
+                            </td>
+                        </tr>
+
+                        <tr class="temperature">
+                            <td id="temp1"></td>
+                            <td id="temp2"></td>
+                            <td id="temp3"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="events">
+            <div class="monthevents">
+                <h1>Upcoming Virtual Events</h1>
+                <p>Follow our Facebook Page to get the Zoom meeting link</p>
+
+                <ul>
+                    <li>
+                        <p class="eventdate">July 7, 2021, Wednesday at 1pm</p>
+                        <p class="eventname">Accounting for Non-Accountants</p>
+                    </li>
+                    <li>
+                        <p class="eventdate">July 14, 2021, Wednesday at 1pm</p>
+                        <p class="eventname">BIR Reportorial Requirements and BMBE Law</p>
+                    </li>
+                    <li>
+                        <p class="eventdate"> July 21, 2021, Wednesday at 1pm</p>
+                        <p class="eventname">BIR E-Filling and BIR E-Payments</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="featuredbiz">
+            <h1 id="featureheader">Featured Businesses</h1>
+            <div class="feature">
+                <section class="bizfeat">
+                    <h2>Top-Notch Construction</h2>
+                    <img src="images/topnotch.jpg" alt="Model T-2121">
+                    <p>"Quality House Construction at the Price You Can Afford!"</p>
+                </section>
+                <section class="bizfeat">
+                    <h2>Rubber & Industrial Construction Philippines</h2>
+                    <img src="images/rcs.jpg" alt="Rubber & Industrial Construction Philippines Contact Info">
+                    <p>"The leading and Trusted Supplier of Rubber Products since 1989. We aim to deliver excellent
+                        QUALITY.
+                        Our clients claim it guaranteed. They keep sharing it to be known by many."
+                    </p>
+                </section>
+                <section class="bizfeat">
+                    <h2>Edwin B. Samot Hair Design</h2>
+                    <img src="images/ebs.jpg" alt="Edwin B. Samot Hair Design">
+                    <p>"Dedicated to providing a professional, high quality experience by using classic and contemporary
+                        techniques found nowhere else."
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="joinhome">
+            <h1><a href="html/join.html">Join the Chamber</a></h1>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="tfooter">
+            <div class="contact">
+                <div class="contactinfo">
+                    <h1>Contact Information</h1>
+                    <p><img src="images/locationblack.png" alt="location">
+                        2nd Floor Imus Building, beside Imus Plaza
+                        Basketball Court, Imus, Cavite
+                    </p>
+                    <p><img src="images/text.png" alt="message"> TEXT: +63 999 222 2222 </p>
+                    <p><img src="images/call.png" alt="phone"> CALL: (046) 543 5158 </p>
+                    <p><img src="images/email.png" alt="email"> iccc@gmail.com </p>
+                </div>
+                <div class="social">
+                    <h1>Follow Us</h1>
+                    <a href="https://twitter.com/"><img src="images/twblack.png" alt="twitter"></a>
+                    <a href="https://www.facebook.com/imuschamberofcommerceandindustry/"><img src="images/fbblack.png"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/igblack.png" alt="instagram"></a>
+                </div>
+
+            </div>
+        </div>
+        <div id="bfooter">
+            <div class="bottom">
+                <p> &copy;<span id="currentyear"> </span>
+                    | Jill Anne Ruth V. Garcia | Philippines |
+                    <a href="https://www.byui.edu/online">
+                        Brigham Young University Online
+                    </a>
+                </p>
+                <p> Current Date: <span id="currdate"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/imusweatherapi.js"></script>
+</body>
+
+</html>

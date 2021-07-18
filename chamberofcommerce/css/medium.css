@@ -1,0 +1,60 @@
+@media only screen and (min-width: 35em) {
+    /* Navigation */
+    .logo {
+        width: 150px;
+        height: auto;
+        padding: 0em 1em;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .7rem 1rem;
+    }
+
+    .links li:first-child {
+        display: none;
+    }
+    
+    .links {
+		display: flex;
+	}
+	.links li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+
+	.links a {
+		text-align: center;
+	}
+
+    .active{
+        background-color: #F5F5F5;
+    }
+
+    .active a {
+        text-decoration: underline solid 10px #3561C0;
+        color: #0A0A0A;
+      }
+    
+    nav ul li a:hover {
+        text-decoration: underline solid 10px #FFCD35;
+        background-color: #F5F5F5;
+    }
+
+    /*About*/
+    .about, .weather, .events, .featuredbiz {
+        padding: 3em;
+        margin: 0em;
+   }
+
+    .about h1 {
+        padding-left: 5rem;
+    }
+    .about p {
+        text-align: justify;
+        padding: 0rem 5rem;
+    }
+
+
+
+}

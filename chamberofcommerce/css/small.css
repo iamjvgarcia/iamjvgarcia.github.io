@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    color: #040810;
+}
+
+h1 {
+    size: 60px;
+}
+
+h2 {
+    size: 55px;
+    font-weight: bold;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Navigation and Header */
+header {
+    background-color: #F5F5F5;
+}
+
+nav ul {
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    padding: 1em    ;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: #0A0A0A;
+}
+
+.links li:first-child {
+    display: block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.links li {
+    display: none;
+    margin: auto;
+}
+
+.responsive li {
+    display: block;
+}
+
+.menu {
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #3561C0;
+}
+
+.active a {
+    color: #F5F5F5;
+}
+
+nav ul li a:hover {
+    background-color: #FFCD35;
+    color: #0A0A0A;
+}
+
+/*Carousel*/
+.slides {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  /**About**/
+
+  .about, .weather, .events, .featuredbiz {
+      padding: 2rem;
+  }
+  
+  /* Weather */
+
+  .weather {
+      background-color: #040810;
+      color: #F5F5F5;
+      text-align: center;
+  }
+
+  .weather h1 {
+      color: #F5F5F5;
+  }
+
+  .forecast {
+    margin: 0 auto;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.forecast img {
+    width: auto;
+}
+
+/* Events*/
+
+.events {
+    left: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.events h1 {
+    color: #A21626;
+}
+
+.events ul {
+    list-style-type: none;
+}
+
+.eventdate {
+    font-size: 18px;
+}
+
+.eventname {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+/* Features */
+
+.bizfeat {
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/* Join (Home) */
+.joinhome {
+    text-align: center;
+    margin: 10em 0em;
+}
+
+.joinhome a {
+    padding: 2rem;
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.3);
+    color: #A21626;
+    text-decoration: none;
+
+}
+
+/* Footer */
+
+.tfooter {
+    background-color: #7F9CDC;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    margin-top: 15px;
+    height:80%;
+    width:100%;
+    position:absolute;
+    box-shadow: 0 0 50px rgb(55, 56, 58);
+
+}
+
+.contact {
+    padding: 5rem;
+}
+
+.contactinfo img {
+    width: auto;
+}
+
+.social img {
+    width: auto;
+    border-radius: 50%;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+}
+
+#bfooter {
+    background-color: #203A71;
+}
+
+.bottom {
+    text-align: center;
+    color: #F5F7F3;
+    padding: 20px;
+}
+
+.bottom a {
+    color: #F5F7F3;
+}
