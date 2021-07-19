@@ -55,6 +55,14 @@
         padding: 0rem 5rem;
     }
 
+    /* IMUS/ Demographics */
+    .demographics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    .text {
+        font-size: 15px;
+    }
 
 }

@@ -35,7 +35,6 @@
     }
     .about p {
         text-align: justify;
-        grid-row: 2;
         grid-column: 2/4;
     }
 
@@ -54,6 +53,27 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 30px;
         }
+
+         /* IMUS/ About additional edits */
+        .about img {
+            grid-row: 2/8;
+        }
+
+        .tourism {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 200px) ;
+        }
+        
+        .tourcar {
+            grid-column: 2;
+            grid-row: 1/3;
+        }
+
+        .touraction {
+            grid-row: 2/3;
+        }
+
 
 
 }

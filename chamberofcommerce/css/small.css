@@ -147,12 +147,17 @@ nav ul li a:hover {
 
 .events {
     left: 10px;
-    padding: 2rem;
     text-align: center;
 }
 
 .events h1 {
     color: #A21626;
+    line-height: 10px;
+}
+
+.events a {
+    color: #0A0A0A;
+    font-weight: bold;
 }
 
 .events ul {
@@ -161,12 +166,14 @@ nav ul li a:hover {
 
 .eventdate {
     font-size: 18px;
+    line-height: 10px;
+    margin-top: 3rem;
 }
 
 .eventname {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 /* Features */
 
@@ -189,12 +196,14 @@ nav ul li a:hover {
     margin: 10em 0em;
 }
 
-.joinhome a {
+.joinhome a, .touraction a {
     padding: 2rem;
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: #A21626;
     box-shadow: 0 10px 12px 0 rgb(0, 0, 0, 0.3);
-    color: #A21626;
+    color: #F5F5F5;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
 
 }
 
@@ -230,16 +239,18 @@ nav ul li a:hover {
 .contactinfo img {
     display: inline;
     width: auto;
+    margin: 0px 10px;
 }
 
 .social img {
-    width: auto;
+    width: 25%;
     border-radius: 50%;
 }
 
 .social a {
     text-decoration: none;
     color: black;
+    margin: 10px;
 }
 
 #bfooter {
@@ -256,9 +267,106 @@ nav ul li a:hover {
     color: #F5F5F5;
 }
 
-.icon {
-    background: url('callw.jpg');
-    height: 20px;
-    width: 20px;
+    /* IMUS/ About additional edits */
+.about img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+    /* IMUS/ Demographics */
+.demographics {
+    text-align: center;
+    line-height: 5px;
+    background-color: #040810;
+    color: #F5F5F5;
+    padding: 2rem 0rem;
+}
+
+.data {
+    font-size: 50px;
+}
+
+.dtitle {
+    font-size: 20px;
+}
+
+    /*IMUS Tourism Carousel*/
+.tourism {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0rem;
+}
+
+.touraction {
+    margin: 3rem;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #F5F5F5;
+  font-size: 11px;
+  padding: 12px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
