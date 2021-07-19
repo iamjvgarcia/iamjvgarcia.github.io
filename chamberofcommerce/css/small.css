@@ -201,7 +201,8 @@ nav ul li a:hover {
 /* Footer */
 
 .tfooter {
-    background-color: #7F9CDC;
+    background-color: #203A71;
+    color: #F5F5F5;
 }
 
 .map-responsive {
@@ -227,6 +228,7 @@ nav ul li a:hover {
 }
 
 .contactinfo img {
+    display: inline;
     width: auto;
 }
 
@@ -241,15 +243,22 @@ nav ul li a:hover {
 }
 
 #bfooter {
-    background-color: #203A71;
+    background-color: #040810;
 }
 
 .bottom {
     text-align: center;
-    color: #F5F7F3;
+    color: #F5F5F5;
     padding: 20px;
 }
 
-.bottom a {
-    color: #F5F7F3;
+.bottom a, .tfooter h1 {
+    color: #F5F5F5;
+}
+
+.icon {
+    background: url('callw.jpg');
+    height: 20px;
+    width: 20px;
+    display: block;
 }
