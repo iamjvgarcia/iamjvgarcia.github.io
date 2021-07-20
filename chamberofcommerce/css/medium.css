@@ -28,7 +28,7 @@
 	}
 
     .active{
-        background-color: #F5F5F5;
+        background-color: #F5F5F5;  
     }
 
     .active a {
@@ -63,6 +63,31 @@
 
     .text {
         font-size: 15px;
+    }
+
+    /*Contact Page/ Directors*/
+
+    .dlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .dlist h1 {
+        grid-column: 1/-1;
+    }
+
+    /* Contact Page Form*/
+    .ccap p {
+        display: inline ;
+        margin: 0rem;
+    }
+
+    .cform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem
+
     }
 
 }

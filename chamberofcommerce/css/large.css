@@ -74,6 +74,11 @@
             grid-row: 2/3;
         }
 
-
+     /*Contact Page/ Directors*/
+    .dcontent {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 1rem;
+    }
 
 }

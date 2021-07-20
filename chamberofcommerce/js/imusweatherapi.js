@@ -37,7 +37,7 @@ fetch(wboxURL)
         document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
 
         day++
-    })
+    })  
     
 });
 
