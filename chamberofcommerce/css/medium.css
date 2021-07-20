@@ -90,4 +90,17 @@
 
     }
 
+    /*Join Page*/
+    
+    .jmlevel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jfcontainer {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 2rem;
+    }
+
 }

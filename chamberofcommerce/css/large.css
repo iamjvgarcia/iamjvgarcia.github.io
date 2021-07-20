@@ -81,4 +81,12 @@
         grid-gap: 1rem;
     }
 
+    /*Join Page*/
+    
+    .jmlevel {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+ 
+
 }

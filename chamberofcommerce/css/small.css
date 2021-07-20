@@ -407,7 +407,7 @@ img {vertical-align: middle;}
 }
 
 
-/* Contact Page Form*/
+/* CONTACT/ JOIN Form*/
 .ccontent { 
     padding: 2rem;
 }
@@ -418,16 +418,16 @@ img {vertical-align: middle;}
 }
 
 /*Form*/
-.cform, .jform {
+.cform {
     padding: 2rem;
   }
   
-  .cform input, .cform textarea, .jform input, .jform textarea {
+  .cform input, .cform textarea, .jform input, .jform textarea, #memlevel {
       width: 100%;
       margin: 1rem 0rem;
       background-color: #F5F5F5;
   }
-  .cform input, .jform input {
+  .cform input, .jform input, #memlevel{
     display: block;
     font-size: 1em;
     border: none;
@@ -464,5 +464,36 @@ img {vertical-align: middle;}
     width: 50%;
   }
 
+  /* JOIN Content*/
 
+  .jcap {
+      background-color: #040810;
+      color: #F5F5F5;
+      padding: 2rem;
+  }
+
+  .jcap h1 {
+      color: #F5F5F5;
+  }
+
+  .jmlevel {
+      padding: 2rem;
+  }
+
+  .jcontainer h1 {
+      padding: 2rem;
+      background-color: #040810;
+      color: #F5F5F5;
+  }
+
+  .jfcontainer {
+     padding: 2rem;
+  }
+
+  .jfcontainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
 
