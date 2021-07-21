@@ -81,6 +81,14 @@
         grid-gap: 1rem;
     }
 
+    
+    /* Contact Page Form*/
+
+    .cform {
+        width: 75%;
+        max-width: 900px;
+    }
+
     /*Join Page*/
     
     .jmlevel {

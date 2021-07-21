@@ -16,5 +16,6 @@ let monthlist = ["January", "February", "March", "April" ,"May", "June", "July",
 let monthname = monthlist[month];
 document.querySelector("#currdate").textContent =  `${nameday}, ${daynumber} ${monthname} ${year}`;
 
+//Last Modified
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastmod').textContent = document.lastModified;
