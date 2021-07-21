@@ -4,17 +4,17 @@
             "name": "Top-Notch Construction Company",
             "logo": "topnotch.png",
             "address": "Unit 302 Berong Bldg, Nueno Avenue, Imus, Cavite",
-            "phone number": "(046) 515 6279",
-            "mobile phone": "(0933) 136 3772",
+            "phone": "(046) 515 6279",
+            "mobile": "(0933) 136 3772",
             "email":"topnotch_construction@yahoo.com",
-                "website": "http:/www.topnotchconstruction.com"
+            "website": "http:/www.topnotchconstruction.com"
         },
         {
             "name": "Rubber & Industrial Construction Philippines",
             "logo": "rubberconstruction.png",
             "address": "Lot 7-J Brgy. Pag-asa II, Alapan, Imus Cavite",
-            "phone number": "(046) 476 2662",
-            "mobile phone": "(0906) 410 7353",
+            "phone": "(046) 476 2662",
+            "mobile": "(0906) 410 7353",
             "email": "sales@rubbersupplierphils.com",
             "website": "https://www.rubbersupplierphils.com/"
         },
@@ -22,8 +22,8 @@
             "name": "BizLab IT Solutions",
             "logo": "bizlab.png",
             "address": "Carsadang Bago, Imus City, Cavite, Philippines",
-            "phone number": " ",
-            "mobile phone": "(0951) 422 4112",
+            "phone": " ",
+            "mobile": "(0951) 422 4112",
             "email": "info@bizlabitsolutions.com",
             "website": "https://www.bizlabitsolutions.com/"
         },
@@ -31,8 +31,8 @@
             "name": "Danocars Trading",
             "logo": "danocars.png",
             "address": "Emilio Aguinaldo Hwy, Palico 1, Imus, 4103 Cavite",
-            "phone number": "(046) 424 3210",
-            "mobile phone": "(0927) 615 2876",
+            "phone": "(046) 424 3210",
+            "mobile": "(0927) 615 2876",
             "email":"sales@danocarstrading.com",
             "website": "https://danocarstrading.com/"
         },
@@ -40,8 +40,8 @@
             "name": "Sund_Shein Travel and Tours",
             "logo": "sundshein.png",
             "address": "Blk 30 Lot 1 Monterra Homes, Bucandala 5 Imus City Cavite",
-            "phone number": "(046) 235 1133",
-            "mobile phone": "(0999) 729 1500",
+            "phone": "(046) 235 1133",
+            "mobile": "(0999) 729 1500",
             "email":"sund_sheintravelandtours@yahoo.com.ph",
             "website": "http://www.sundsheintraveland.wix.com/sundsheintravel"
         },
@@ -49,8 +49,8 @@
             "name": "Top-Most Hardware",
             "logo": "topmost.png",
             "address": "Lot 1109E Advincula St. Pag-asa III, Imus City, Cavite, Philippines",
-            "phone number": "(046) 537 6546",
-            "mobile phone": "(0927) 517 9956",
+            "phone": "(046) 537 6546",
+            "mobile": "(0927) 517 9956",
             "email":"support@topmosthardware.ph",
             "website": "https://www.topmosthardware.ph/"
         },
@@ -58,8 +58,8 @@
             "name": "Sanai Excellence Marketing Inc.",
             "logo": "semi.png",
             "address": "107 St. Francis St. Hausland Subd Anabu 1-B, Imus City, Cavite, Philippines",
-            "phone number": "(046) 573 7330",
-            "mobile phone": "(0977) 208 8369",
+            "phone": "(046) 573 7330",
+            "mobile": "(0977) 208 8369",
             "email":"semi.sales1@gmail.com",
             "website": "http://s-e-m-i.weebly.com/"
         }
