@@ -1,79 +1,84 @@
-//test json
-const requestURL = 'https://iamjvgarcia.github.io/chamberofcommerce/json/directory.json';
+//row1  
+const requestURL = "https://iamjvgarcia.github.io/chamberofcommerce/json/directory.json";
 
 fetch(requestURL)
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(jsonObject) {
-        
-        const companies = jsonObject['companies']
-        
-        for (let i = 0; i < companies.length; i++){
+    .then(function (compData) {
+        const companies = compData['companies'];
+        const forpage = companies
 
-        let drow = document.getElementsByClassName('row');
-        let dcol = document.getElementsByClassName('column');
-        let h2 = document.createElement('h2');
-        h2.setAttribute('class','compname')
-        let compadd = document.createElement('p');
-        let cphone = document.createElement('p');
-        let cmobile = document.createElement('p');
-        let compemail = document.createElement('p');
-        let compweb = document.createElement('p');
-        let logoimg = document.createElement('img');
+        forpage.forEach(companies => {
 
-        h2.textContent = companies[i].name ;
-        compadd.textContent = 'Address: ' + companies[i].address;
-        cphone.textContent = 'Phone Number: ' + companies[i].phone;
-        cmobile.textContent = 'Mobile Phone: ' + companies[i].mobile;
-        compemail.textContent = 'Email: ' + companies[i].email;
-        compweb.textContent = 'Website: ' + companies[i].website;
-        logoimg.setAttribute('src', companies[i].logo);
-        logoimg.setAttribute('alt', companies[i].name);
-        
-        dcol.appendChild(h2);
-        dcol.appendChild(compadd);
-        dcol.appendChild(cphone);
-        dcol.appendChild(cmobile);
-        dcol.appendChild(compemail);
-        dcol.appendChild(compweb);
+            let compCards = document.createElement('section');
+            compCards.setAttribute('class', 'companies')
+            let h2 = document.createElement('h2');
+            let compadd = document.createElement('p');
+            compadd.setAttribute("class", "compadd")
+            let cphone = document.createElement('p');
+            let cmobile = document.createElement('p');
+            let compemail = document.createElement('p');
+            let compweb = document.createElement('p');
+            let imgContainter = document.createElement('div');
+            imgContainter.setAttribute("class", "imgContainer")
+            let townImage = document.createElement('img');
 
-        document.querySelector('div.dcontainer').appendChild(drow);
-    }
+
+            compCards.appendChild(imgContainter)
+
+            townImage.setAttribute('src', companies.logo);
+            townImage.setAttribute('alt', `${companies.name}`);
+            imgContainter.appendChild(townImage);
+
+            h2.textContent = `${companies.name}`;
+            compCards.appendChild(h2);
+
+            compadd.textContent = `Address: ${companies.address}`;
+            compCards.appendChild(compadd);
+
+            cphone.textContent = `Phone: ${companies.phone}`;
+            compCards.appendChild(cphone);
+
+            cmobile.textContent = `Mobile: ${companies.mobile}`;
+            compCards.appendChild(cmobile);
+
+            compemail.textContent = `Email: ${companies.email}`;
+            compCards.appendChild(compemail);
+
+            compweb.textContent = `Average Rainfall: ${companies.website}`;
+            compCards.appendChild(compweb);
+
+            document.getElementById('dcontainer').appendChild(compCards);
+
+        });
+    })
+
+//grid/list view
+
+window.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("sGrid").addEventListener("click", function () {
+        document.getElementById("dcontainer").classList.remove("grid");
     });
+    document.getElementById("sList").addEventListener("click", function () {
+        document.getElementById("dcontainer").classList.add("grid");
+    });
+});
 
-    //grid 
-
- // Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
-
-// Declare a loop variable
-var i;
-
-// List View
-function listView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "100%";
-  }
-}
-
-// Grid View
-function gridView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
-  }
-}
-
-/* Optional: Add active class to the current button (highlight it) */
-var container = document.getElementById("btnContainer");
+var container = document.getElementById("btncontainer");
 var btns = container.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("dactive");
+        current[0].className = current[0].className.replace("dactive", "");
+        this.className += " dactive";
+    });
 }
+
+
+
+
+
 
 
 

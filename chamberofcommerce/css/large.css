@@ -1,22 +1,5 @@
 @media only screen and (min-width: 64em){
-    header {
-        display: grid;
-        grid-template-columns: 200px auto;
-    }
-    .logo {
-        width: 200px;
-        height: auto;   
-    }
 
-    nav ul { 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        padding-left: 0;
-    }
-
-    nav ul li a {
-        padding: .6rem 1rem;
-    }
 
 
     /*About*/
@@ -95,6 +78,10 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
- 
+    
+    /* Directory Transform to Grid*/
+    #dcontainer { 
+        grid-template-columns: 33% 33% 33%; 
+    }
 
 }

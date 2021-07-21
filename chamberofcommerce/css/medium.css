@@ -1,14 +1,25 @@
 @media only screen and (min-width: 35em) {
     /* Navigation */
+    header {
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+
     .logo {
-        width: 150px;
+        width: auto;
         height: auto;
         padding: 0em 1em;
     }
 
+    nav ul { 
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 0;
+    }
+
     nav ul li a {
         border: none;
-        padding: .7rem 1rem;
+        padding: .6rem 1rem;
     }
 
     .links li:first-child {
@@ -27,7 +38,7 @@
 		text-align: center;
 	}
 
-    .active{
+    .active {
         background-color: #F5F5F5;  
     }
 
@@ -88,6 +99,7 @@
     .jmlevel {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
     }
 
     .jfcontainer {
@@ -95,5 +107,16 @@
         grid-template-columns: auto 1fr;
         grid-gap: 2rem;
     }
+
+      /* Directory Transform to Grid*/
+      #dcontainer.grid {
+        width: 35%;
+    }
+        
+    #dcontainer { 
+        width: auto;
+    }
+
+
 
 }

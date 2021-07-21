@@ -70,7 +70,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-.active {
+.active  {
     background-color: #3561C0;
 }
 
@@ -307,11 +307,11 @@ nav ul li a:hover {
 }
 
 * {box-sizing: border-box}
-.mySlides {display: none}
+.tourslides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
+.tccontainer {
   max-width: 500px;
   position: relative;
   margin: auto;
@@ -383,7 +383,12 @@ img {vertical-align: middle;}
     padding: 1rem;
 }
 
-.directors h1 {
+.dirheading {
+    padding: 2rem;
+    background-color: #040810 ;
+}
+
+.dirheading h1 {
     color: #F5F5F5;
 }
 
@@ -472,12 +477,22 @@ img {vertical-align: middle;}
       padding: 2rem;
   }
 
+  .prices {
+      font-size: 20px;
+      margin-top: 0em;
+  }
+
   .jcap h1 {
       color: #F5F5F5;
   }
 
   .jmlevel {
       padding: 2rem;
+  }
+
+  .jmlevel h2 {
+      font-size: 30px;
+      margin-bottom: 0em;
   }
 
   .jcontainer h1 {
@@ -499,38 +514,71 @@ img {vertical-align: middle;}
 
   /*Directory css test*/
 
-  * {
-    box-sizing: border-box;
+  .directory, #btncontainer {
+      padding: 2rem;
   }
-  
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
+
+  .directory {
+      background-color: #040810;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  .directory h1 {
+      color: #F5F5F5;
   }
-  /* Style the buttons */
+
+  #dcontainer {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 50% 50%;
+    }
+
+  .companies {
+      padding: 2rem;
+      word-wrap: break-word;
+
+  }
+
+  .companies img {
+      width: 100%;
+      margin: auto;
+      padding: auto;
+      display: block;
+  }
+   
+  #dcontainer .companies:nth-child(even) { 
+      background-color: #040810;
+      color: #F5F5F5; 
+    }
+    
+  #dcontainer .companies:nth-child(even) h2 { 
+        color: #F5F5F5; 
+    }
+
+  /* Transform to List*/
+  #dcontainer.grid { 
+    grid-template-columns: 100%;
+    margin: 2rem;
+    }
+
+
+  /*Button Decoration*/
   .btn {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: #f1f1f1;
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: #ddd;
+    background-color: #FFCD35;
   }
   
-  .btn.active {
-    background-color: #666;
-    color: white;
+  .btn.dactive {
+    background-color: #203A71;
+    color: #F5F5F5;
   }
 
+  /*Resources Page*/
+  .resources {
+      padding: 2rem;
+  }
