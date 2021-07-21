@@ -43,13 +43,22 @@
     }
 
     .active a {
-        text-decoration: underline solid 10px #3561C0;
-        color: #0A0A0A;
+       /* text-decoration: underline solid #3561C0;*/
+       text-decoration: none;
+       border-bottom: 5px solid #203A71;
+       color: #0A0A0A;
       }
     
     nav ul li a:hover {
-        text-decoration: underline solid 10px #FFCD35;
+        text-decoration: none;
+        border-bottom: 5px solid #FFCD35;
         background-color: #F5F5F5;
+    }
+
+    /* Footer*/
+
+    .contact {
+        padding: 5em;
     }
 
     /*About*/
@@ -112,7 +121,7 @@
       #dcontainer.grid {
         width: 35%;
     }
-        
+
     #dcontainer { 
         width: auto;
     }

@@ -10,11 +10,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    size: 60px;
+    font-size: 2.5em;
 }
 
 h2 {
-    size: 55px;
+    font-size: 1.5em;
     font-weight: bold;
 
 }
@@ -237,7 +237,7 @@ nav ul li a:hover {
 }
 
 .contact {
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .contactinfo img {
@@ -541,7 +541,6 @@ img {vertical-align: middle;}
   .companies img {
       width: 100%;
       margin: auto;
-      padding: auto;
       display: block;
   }
    
