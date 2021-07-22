@@ -146,18 +146,33 @@
 
             <form class="cform">
 
-                <input type="text" id="fname" name="firstname" placeholder="First Name" pattern="^[a-zA-Z0-9]*$"
-                    required>
+                <div class="formelem">
+                    <input type="text" class="formcontent" name="firstname" placeholder=" " pattern="^[a-zA-Z0-9]*$"
+                        required>
+                    <label class="formlabel">First Name</label>
+                </div>
 
-                <input type="text" id="lname" name="lastname" placeholder="Last Name" pattern="^[a-zA-Z0-9]*$" required>
+                <div class="formelem">
+                    <input type="text" class="formcontent" name="lastname" placeholder=" " pattern="^[a-zA-Z0-9]*$" required>
+                    <label class="formlabel">Last Name</label>
+                </div>
 
-                <input type="text" id="email" name="email" placeholder="Email Address" required>
+                <div class="formelem">
+                    <input type="email" class="formcontent" name="email" placeholder=" " required>
+                    <label class="formlabel">Email Address</label>
+                </div>
 
-                <input type="tel" id="pnumber" name="phone" placeholder="Phone Number" required>
+                <div class="formelem">
+                    <input type="tel" class="formcontent" name="phone" placeholder=" " required>
+                    <label class="formlabel">Phone Number</label>
+                </div>
 
-                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <div class="formelem">
+                    <textarea id="areacontent" name="bisdesc" placeholder=" "></textarea>
+                    <label id="arealabel">Business Description</label>
+                </div>
 
-                <input type="submit" id="cfbutton" value="Submit">
+                <input type="submit" class="submitform" value="Submit">
 
             </form>
         </div>

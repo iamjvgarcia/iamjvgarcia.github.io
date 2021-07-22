@@ -140,41 +140,69 @@
             <h1>Application Form</h1>
             <div class="jfcontainer">
                 <img src="images/rsz_iccclogo.png" alt="ICCC Logo">
-            <form class="jform">
+                <form class="jform">
 
-                <input type="text" id="fname" name="firstname" placeholder="First Name" pattern="^[a-zA-Z0-9]*$"
-                    required>
+                    <div class="formelem">
+                        <input type="text" class="formcontent" name="firstname" placeholder=" " pattern="^[a-zA-Z0-9]*$"
+                            required>
+                        <label class="formlabel">First Name</label>
+                    </div>
 
-                <input type="text" id="lname" name="lastname" placeholder="Last Name" pattern="^[a-zA-Z0-9]*$" required>
+                    <div class="formelem">
+                        <input type="text" class="formcontent" name="lastname" placeholder=" " pattern="^[a-zA-Z0-9]*$" required>
+                        <label class="formlabel">Last Name</label>
+                    </div>
 
-                <input type="text" id="title" name="title" placeholder="Title" required>
+                    <div class="formelem">
+                        <input type="text" class="formcontent"name="title" placeholder=" " required>
+                        <label class="formlabel">Title</label>
+                    </div>
 
-                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <div class="formelem">
+                        <input type="email" class="formcontent" name="email" placeholder=" " required>
+                        <label class="formlabel">Email Address</label>
+                    </div>
 
-                <input type="tel" id="pnumber" name="phone" placeholder="Phone Number" required>
+                    <div class="formelem">
+                        <input type="tel" class="formcontent" name="phone" placeholder=" " required>
+                        <label class="formlabel">Phone Number</label>
+                    </div>
 
-                <input type="text" id="bname" name="bisname" placeholder="Business Name" required>
+                    <div class="formelem">
+                        <input type="text" class="formcontent" name="bisname" placeholder=" " required>
+                        <label class="formlabel">Business Name</label>
+                    </div>
 
-                <input type="text" id="badd" name="bisadd" placeholder="Business Address">
+                    <div class="formelem">
+                        <input type="text" class="formcontent" name="bisadd" placeholder=" ">
+                        <label class="formlabel">Business Address</label>
+                    </div>
 
-                <input type="url" id="bweb" name="biswebsite" placeholder="Business Website">
+                    <div class="formelem">
+                        <input type="url" class="formcontent" name="biswebsite" placeholder=" ">
+                        <label class="formlabel">Business Website</label>
+                    </div>
 
-                <textarea id="bdesc" name="bisdesc" placeholder="Business Description"></textarea>
+                    <div class="formelem">
+                        <textarea id="areacontent" name="bisdesc" placeholder=" "></textarea>
+                        <label id="arealabel">Business Description</label>
+                    </div>
 
-                <label>Membership Level
-                    <select name="membershiplevel" id="memlevel">
-                        <optgroup label="Membership Level">
-                            <option value="Non-profit" class="level">Non-profit ($100) </option>
-                            <option value="Bronze" class="level">Bronze ($200) </option>
-                            <option value="Silver" class="level">Silver ($400) </option>
-                            <option value="Gold" class="level">Gold ($1000) </option>
-                    </select>
-                </label>
+                    <div class="formelem">
+                        <label id="memlabel">Membership Level</label>
+                        <select name="membershiplevel" id="memlevel">
+                            <optgroup label="Membership Level">
+                                <option value="Non-profit" class="level">Non-profit ($100) </option>
+                                <option value="Bronze" class="level">Bronze ($200) </option>
+                                <option value="Silver" class="level">Silver ($400) </option>
+                                <option value="Gold" class="level">Gold ($1000) </option>
+                        </select>
+                    </div>
 
-                <input type="submit" id="jfbutton" value="Submit">
+                        <input type="submit" class="submitform" value="Submit">
 
-            </form>
-        </div>
+                </form>
+            </div>
         </div>
     </main>
 
